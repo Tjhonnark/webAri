@@ -23,7 +23,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                     alt=""
                     width={1400}
                     height={570}
-                    objectFit="cover"
+                    /* objectFit="cover" */
                 />
                 {/* <Image
                             className={styles.imageS1}
@@ -64,7 +64,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                         alt=""
                         width={600}
                         height={400}
-                        objectFit="cover"
+                        /* objectFit="cover" */
                     />
                 </article>
                 <article className={styles.article2_s2}>
@@ -85,7 +85,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                         alt=""
                         width={600}
                         height={400}
-                        objectFit="cover"
+                        /* objectFit="cover" */
                     />
                 </article>
             </section>
@@ -104,7 +104,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                     alt=""
                     width={1350}
                     height={700}
-                    objectFit="cover"
+                    /* objectFit="cover" */
                 />
             </section>
             <section id='section4' className={styles.section4}>
