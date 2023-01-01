@@ -1,0 +1,12 @@
+/* CONTACT INFO */
+.contact_item {
+}
+.contact_item i {
+    padding-right: 5px;
+}
+.contact_item a {
+  text-decoration: none;
+}
+.contact_item:hover {
+  color: rgb(0, 0, 0);
+}
