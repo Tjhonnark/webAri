@@ -18,18 +18,19 @@ export default function Footer(props) {
                         </Link>
                     </div>
                     <div className={styles.itemPages}>
-                        
-                            <a href="/about" aria-current="page"><i className="bi bi-people-fill"></i>¿Quiénes somos?</a>
-                        
+                        <Link href="/about">
+                             <i className="bi bi-people-fill"></i>¿Quiénes somos?
+                        </Link>
                     </div>
                     <div className={styles.itemPages}>
-                        
-                            <a href="/products" aria-current="page"><i className="bi bi-box-seam"></i>Productos</a>
-                        
+                        <Link href="/products">
+                            <i className="bi bi-box-seam"></i>Productos
+                        </Link>
                     </div>
                     <div className={styles.itemPages}>
-                        
-                            <a href="/contact" aria-current="page"><i className="bi bi-envelope-paper-fill"></i>Contactos</a>
+                        <Link href="/contact">
+                            <i className="bi bi-envelope-paper-fill"></i>Contactos
+                        </Link>
                        
                     </div>
                 </div>

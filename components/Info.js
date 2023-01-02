@@ -12,6 +12,7 @@ const Info = (props) => {
                 <a
                     href="https://goo.gl/maps/svdAaoiHsp77zHiUA"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <i className="bi bi-geo-alt-fill"></i>
                     Edificio ACJ, Urbanización Villa María, Río Abajo, Ciudad Panamá
@@ -27,6 +28,7 @@ const Info = (props) => {
                 <a
                     href="mailto:conomovil_pa@yahoo.com"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <i className="bi bi-envelope-fill"></i>
                     conomovil_pa@yahoo.com
