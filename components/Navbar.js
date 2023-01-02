@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 /* STYLES */
 import styles from '../styles/Navbar.module.css'
 
@@ -12,25 +13,32 @@ export default function Navbar() {
   return (
     <nav className={styles.header}>
       <div className={styles.container}>
-        <img src="/logo.png" className={styles.logo} alt="" width="10%" />
+        <Image 
+        src="/logo.png" 
+        className={styles.logo} 
+        alt="" 
+        width={90}
+        height={90} />
         <div className={styles.navbar}>
           <div className={styles.item}>
-              <a href="/" aria-current="page" ><i className="bi bi-house-fill"></i>Inicio</a>
-            
+            <Link href="/">
+              <i className="bi bi-house-fill"></i>Inicio
+            </Link>
           </div>
           <div className={styles.item}>
-            
-              <a href="/about" aria-current="page" ><i className="bi bi-people-fill"></i>¿Quiénes somos?</a>
-            
+            <Link href="/about">
+              <i className="bi bi-people-fill"></i>¿Quiénes somos?
+            </Link>
           </div>
           <div className={styles.item}>
-           
-              <a href="/products" aria-current="page" ><i className="bi bi-box-seam"></i>Productos</a>
-            
+           <Link href="/products">
+              <i className="bi bi-box-seam"></i>Productos
+           </Link>
           </div>
           <div className={styles.item}>
-           
-              <a href="/contact" aria-current="page" ><i className="bi bi-envelope-paper-fill"></i>Contactos</a>
+           <Link href="/contact">
+              <i className="bi bi-envelope-paper-fill"></i>Contactos
+           </Link>
             
           </div>
         </div>
