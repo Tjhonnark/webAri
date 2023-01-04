@@ -1,0 +1,76 @@
+.form {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 100%;
+    gap: 1.5rem;
+    --primary-color: #fff;
+    --secondary-color: rgb(156, 156, 156);
+    --backlabel-color: #fc3c74;
+  }
+  .titleForm {
+    width: 100%;
+  }
+  .titleForm h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+  .form label {
+    color: #fff;
+  } 
+  .form div input,
+  .form div textarea {
+    background: none;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #fff;
+    resize: none;
+  }
+  .name {
+    flex-basis: 12rem;
+  }
+  .email {
+    flex-basis: 16rem;
+  }
+  .phone {
+    flex-basis: 12rem;
+  }
+  .affair {
+    flex-basis: 16rem;
+  }
+  .message {
+    flex-basis: 100%;
+  }
+  
+  /* BUTTON SEND */
+  .send {
+    width: 100%;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  .send:hover {
+    background-color: #000;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+  }
+  .send:active {
+    transform: scale(0.95);
+    transition: all 0.5s ease 0s;
+  }

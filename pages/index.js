@@ -1,7 +1,3 @@
-/* "emmet.includeLanguages": {
-        "javascript":"javascriptreact"
-    },
- */
 import { useEffect } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
@@ -41,8 +37,9 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                 <div className={styles.text1_a1_s1}>
                     <h1>Conos y Waffles Clarita</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    
-                        <a href='#section2'>Nuevos productos</a>
+                    <Link href='#section2'>
+                        Nuevos productos
+                    </Link>
                     
                 </div>
 
@@ -52,13 +49,14 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                 <article className={styles.article1_s2}>
                     <div className={styles.text1_a1_s2}>
                         <h2>Article 1</h2>
-                        
-                            <a href='/products' className={styles.button_a1s2}>
+                        <Link href='/products'>
+                            <div className={styles.button_a1s2}>
                                 Ordenar pedido
                                 <div className={styles.arrowWrapper}>
                                     <div className={styles.arrow}></div>
                                 </div>
-                            </a>
+                            </div>
+                        </Link>
                         
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos fugiat explicabo nobis deleniti sapiente quis assumenda, aspernatur natus nemo nihil eaque totam rem a cum inventore magni vero. Vel, laudantium!</p>
                     </div>
@@ -74,13 +72,14 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                 <article className={styles.article2_s2}>
                     <div className={styles.text1_a2_s2}>
                         <h2>Article 2</h2>
-                        
-                            <a href='/products' className={styles.button_a2s2}>
+                        <Link href='/products'>
+                            <div  className={styles.button_a2s2}>
                                 Ordenar pedido
                                 <div className={styles.arrowWrapper}>
                                     <div className={styles.arrow}></div>
                                 </div>
-                            </a>
+                            </div>
+                        </Link>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos fugiat explicabo nobis deleniti sapiente quis assumenda, aspernatur natus nemo nihil eaque totam rem a cum inventore magni vero. Vel, laudantium!</p>
                     </div>
                     <Image
