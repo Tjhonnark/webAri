@@ -49,7 +49,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                 <article className={styles.article1_s2}>
                     <div className={styles.text1_a1_s2}>
                         <h2>Article 1</h2>
-                        <Link href='/products'>
+                        <Link href='/products' className={styles.buttontest}>
                             <div className={styles.button_a1s2}>
                                 Ordenar pedido
                                 <div className={styles.arrowWrapper}>
@@ -72,7 +72,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                 <article className={styles.article2_s2}>
                     <div className={styles.text1_a2_s2}>
                         <h2>Article 2</h2>
-                        <Link href='/products'>
+                        <Link href='/products' className={styles.buttontest}>
                             <div  className={styles.button_a2s2}>
                                 Ordenar pedido
                                 <div className={styles.arrowWrapper}>

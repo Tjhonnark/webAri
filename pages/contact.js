@@ -31,9 +31,9 @@ const Contact = ({ scrollUpFunction, styleScrollUp }) => {
                 <div className={styles.text_s1}>
                     <h1>Contáctenos</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe eum dicta atque est repudiandae neque delectus ex, autem consequatur quos?
+                    Para más información sobre nuestros productos, precio y distribución, rellene nuestro formulario y nos pondremos en contacto lo antes posible.
                     </p>
-                    <Link href="#section3" >
+                    <Link href="#section3" className={styles.buttontest} >
                         <div className={styles.buttonS1}>
                             <div className={styles.svgWrapper1}>
                                 <div className={styles.svgWrapper}>

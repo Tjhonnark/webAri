@@ -35,6 +35,9 @@
   }
   
   /* From uiverse.io by @adamgiebl */
+  .buttontest {
+    text-decoration: none;
+  }
   .buttonS1 {
     font-family: inherit;
     font-size: 20px;
