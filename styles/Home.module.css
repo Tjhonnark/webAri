@@ -277,6 +277,7 @@
   justify-content: flex-start;
 }
 .backgroundS3 {
+  width: 100%;
   z-index: 0;
 }
 /* SECTION 3 - ARTICLE 1 */
