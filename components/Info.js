@@ -15,13 +15,13 @@ const Info = (props) => {
                     rel="noreferrer"
                 >
                     <i className="bi bi-geo-alt-fill"></i>
-                    Edificio ACJ, Urbanización Villa María, Río Abajo, Ciudad Panamá
+                    Local ACJ, Urbanización Villa María, José Agustín Arango, Río Abajo, Ciudad Panamá
                 </a>
             </div>
             <div className={styles.contact_item}>
                 <a href="tel:+50767780290">
                     <i className="bi bi-telephone-forward-fill"></i>
-                    000-0000
+                    221-2880
                 </a>
             </div>
             <div className={styles.contact_item}>

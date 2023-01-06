@@ -36,7 +36,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                         /> */}
                 <div className={styles.text1_a1_s1}>
                     <h1>Conos y Waffles Clarita</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Hacemos tu mundo más dulce y feliz.</p>
                     <Link href='#section2'>
                         Nuevos productos
                     </Link>
@@ -48,7 +48,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                 <h1>Nuevos productos</h1>
                 <article className={styles.article1_s2}>
                     <div className={styles.text1_a1_s2}>
-                        <h2>Article 1</h2>
+                        <h2>Cono Taco</h2>
                         <Link href='/products' className={styles.buttontest}>
                             <div className={styles.button_a1s2}>
                                 Ordenar pedido
@@ -62,16 +62,17 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                     </div>
                     <Image
                         className={styles.imageA1S2}
-                        src="/example.jpg"
+                        src="/conotaco2.jpeg"
                         alt=""
-                        width={600}
-                        height={400}
-                        /* objectFit="cover" */
+                        width={400}
+                        height={450}
+                        /* objectFit="cover"
+                        objectPosition="50%" */
                     />
                 </article>
                 <article className={styles.article2_s2}>
                     <div className={styles.text1_a2_s2}>
-                        <h2>Article 2</h2>
+                        <h2>Canasta de helado</h2>
                         <Link href='/products' className={styles.buttontest}>
                             <div  className={styles.button_a2s2}>
                                 Ordenar pedido
@@ -84,11 +85,11 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                     </div>
                     <Image
                         className={styles.imageA2S2}
-                        src="/example.jpg"
+                        src="/canastadehelado.jpg"
                         alt=""
-                        width={600}
+                        width={400}
                         height={400}
-                        /* objectFit="cover" */
+                        /* objectFit="contain" */
                     />
                 </article>
             </section>

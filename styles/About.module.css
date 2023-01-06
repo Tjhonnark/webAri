@@ -79,6 +79,7 @@
   }
   .backgroundS2 {
     z-index: 0;
+    /* transform: rotate(270deg); */
   }
   /* SECTION 2 - ARTICLE 1 */
   .text1_a1_s2 {
@@ -187,5 +188,4 @@
     gap: 2rem;
   }
   .client {
-    
   }

@@ -2,7 +2,7 @@ export const clients = [
     {
         id: 1,
         company: 'Company 1',
-        image: '/logo.png',
+        image: '/gelarti.png',
     },
     {
         id: 2,
