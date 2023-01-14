@@ -11,7 +11,7 @@ export default function Footer(props) {
         <footer className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.linkPages}>
-                    <h4>Pagínas</h4>
+                    <h4>Páginas</h4>
                     <div className={styles.itemPages}>
                         <Link href="/">
                              {/* aria-current="page"> */}<i className="bi bi-house-fill"></i>Inicio

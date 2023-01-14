@@ -22,7 +22,7 @@ function Home({ scrollUpFunction, styleScrollUp }) {
                     src="/icecream.jpg"
                     alt=""
                     width={1400}
-                    height={570}
+                    height={550}
                     /* objectFit="cover" */
                 />
                 {/* <Image
