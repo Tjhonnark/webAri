@@ -52,7 +52,7 @@
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #ECEFF1;
+    background-color: #fff;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
     z-index: 2;
@@ -73,6 +73,12 @@
   }
   .logo {
     margin: 0 0 1rem 5.5rem;
+  }
+  .menu__box2 {
+    display: none;
+  }
+  .menu__btn2 {
+    display: none;
   }
   @media only screen and (min-width: 499px) {
     .menu {

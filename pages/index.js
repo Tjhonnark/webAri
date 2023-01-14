@@ -5,11 +5,12 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer'
 import ScrollUp from '../components/ScrollUp'
+import Burger from '../components/Burger';
 import UseWindowSize from '../components/UseWindowSize';
 /* STYLES */
 import styles from '../styles/Home.module.css';
 
-function Home({ scrollUpFunction, styleScrollUp }) {
+function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
 
     const size = UseWindowSize();
     /* console.log(size.width) */
@@ -131,6 +132,9 @@ function Home({ scrollUpFunction, styleScrollUp }) {
             <ScrollUp
                 scrollUpFunction={scrollUpFunction}
                 styleScrollUp={styleScrollUp}
+            />
+            <Burger 
+                styleBurger={styleBurger}
             />
             <Footer
                 page="/"

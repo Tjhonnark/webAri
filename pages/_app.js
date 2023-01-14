@@ -11,19 +11,27 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap');
   }, [])
+  
+  // Burger
+  const [styleBurger, setStyleBurger] = useState(true);
 
   // Scroll Up
-
-  const [styleScrollUp, setStyleScrollUp] = useState(true);
+  const [styleScrollUp, setStyleScrollUp] = useState(true)
 
   // Scroll Up hidden
   useEffect(() => {
     addEventListener('scroll', (event) => {
       var scroll = document.documentElement.scrollTop;
+      
       if (scroll < 600) {
         setStyleScrollUp(true);
       } else {
         setStyleScrollUp(false);
+      }
+      if (scroll < 4300) {
+        setStyleBurger(true);
+      } else {
+        setStyleBurger(false);
       }
     });
   }, [])
@@ -36,6 +44,7 @@ function MyApp({ Component, pageProps }) {
       window.scrollTo(0, 0);
     }
   }
+  
 
   return (
     <div>
@@ -46,10 +55,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Layout>
-        <Component 
-        {...pageProps}
-        scrollUpFunction={scrollUpFunction}
-        styleScrollUp={styleScrollUp}
+        <Component
+          {...pageProps}
+          scrollUpFunction={scrollUpFunction}
+          styleScrollUp={styleScrollUp}
+          styleBurger={styleBurger}
         />
       </Layout>
 

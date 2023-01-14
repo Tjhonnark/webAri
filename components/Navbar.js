@@ -19,7 +19,7 @@ export default function Navbar() {
           src="/logo.png"
           className={styles.logo}
           alt=""
-          width={200}
+          width={100}
           height={100} />
         <div className={styles.navbar}>
           <div className={styles.item}>

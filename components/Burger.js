@@ -3,16 +3,16 @@ import Image from 'next/image'
 /* STYLES */
 import styles from '../styles/Burger.module.css'
 
-export default function Burger() {
+export default function Burger({ styleBurger }) {
     return (
         <div>
             <div className={styles.menu}>
                 <input id="menu__toggle" className={styles.menu__toggle} type="checkbox" />
-                <label className={styles.menu__btn} htmlFor="menu__toggle">
+                <label className={styleBurger ? styles.menu__btn : styles.menu__btn2} htmlFor="menu__toggle">
                     <span></span>
                 </label>
 
-                <ul className={styles.menu__box}>
+                <ul className={styleBurger ? styles.menu__box2 : styles.menu__box}>
                     <Image
                         src="/logo.png"
                         className={styles.logo}
