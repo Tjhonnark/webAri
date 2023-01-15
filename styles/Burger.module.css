@@ -71,8 +71,11 @@
     background-color: #FC3C74;
     color: #fff;
   }
+  .menu__item i {
+    margin-right: 0.5rem;
+  }
   .logo {
-    margin: 0 0 1rem 5.5rem;
+    margin: 0 0 1rem 6rem;
   }
   .menu__box2 {
     display: none;

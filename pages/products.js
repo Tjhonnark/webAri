@@ -6,12 +6,13 @@ import FormSend from '../components/modals/FormSend'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer'
 import ScrollUp from '../components/ScrollUp'
+import Burger from '../components/Burger';
 /* DATA */
 import { initialProducts } from '../components/data/dataProducts'
 /* STYLES */
 import styles from '../styles/Products.module.css'
 
-export default function Products({ scrollUpFunction, styleScrollUp }) {
+export default function Products({ scrollUpFunction, styleScrollUp, styleBurger }) {
 
     const [products, setProducts] = useState(initialProducts);
 
@@ -45,7 +46,7 @@ export default function Products({ scrollUpFunction, styleScrollUp }) {
     useEffect(() => {
         addEventListener('scroll', (event) => {
             var scroll = document.documentElement.scrollTop;
-            if (scroll > 1205) {
+            if (scroll > 4300) {
                 setStylesCart(true);
             } else {
                 setStylesCart(false);
@@ -83,6 +84,9 @@ export default function Products({ scrollUpFunction, styleScrollUp }) {
             <ScrollUp 
                 scrollUpFunction={scrollUpFunction}
                 styleScrollUp={styleScrollUp}
+            />
+            <Burger 
+                styleBurger={styleBurger}
             />
             <Footer
                 page="/"

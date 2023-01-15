@@ -9,10 +9,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer'
 import Info from '../components/Info';
 import ScrollUp from '../components/ScrollUp'
+import Burger from '../components/Burger';
 /* STYLES */
 import styles from '../styles/Contact.module.css'
 
-const Contact = ({ scrollUpFunction, styleScrollUp }) => {
+const Contact = ({ scrollUpFunction, styleScrollUp, styleBurger }) => {
 
     const [modalFormSend, setModalFormSend] = useState(false);
 
@@ -62,6 +63,7 @@ const Contact = ({ scrollUpFunction, styleScrollUp }) => {
                 <Image
                     src="/ContactUs.png"
                     alt=""
+                    className={styles.imageS3}
                     width={600}
                     height={450}
                     objectFit="contain"
@@ -75,6 +77,9 @@ const Contact = ({ scrollUpFunction, styleScrollUp }) => {
             <ScrollUp
                 scrollUpFunction={scrollUpFunction}
                 styleScrollUp={styleScrollUp}
+            />
+            <Burger 
+                styleBurger={styleBurger}
             />
             <Footer
                 page="/contact"

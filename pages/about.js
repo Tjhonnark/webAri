@@ -4,12 +4,15 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer'
 import ScrollUp from '../components/ScrollUp'
+import Burger from '../components/Burger';
 /* DATA */
 import { clients } from '../components/data/dataClients';
 /* STYLES */
 import styles from '../styles/About.module.css'
 
-export default function About({ scrollUpFunction, styleScrollUp }) {
+export default function About({ scrollUpFunction, styleScrollUp, styleBurger }) {
+
+    /* console.log(Image) */
 
     return (
         <div className={styles.body}>
@@ -25,7 +28,7 @@ export default function About({ scrollUpFunction, styleScrollUp }) {
                         alt=""
                         width={600}
                         height={400}
-                        objectFit="cover"
+                    /* objectFit="cover" */
                     />
                 </article>
                 <article className={styles.article2_s1}>
@@ -38,7 +41,7 @@ export default function About({ scrollUpFunction, styleScrollUp }) {
                         alt=""
                         width={600}
                         height={400}
-                        objectFit="cover"
+                    /* objectFit="cover" */
                     />
                 </article>
             </section>
@@ -155,7 +158,7 @@ export default function About({ scrollUpFunction, styleScrollUp }) {
                                     alt=''
                                     width={150}
                                     height={150}
-                                    objectFit="cover"
+                                /* objectFit="cover" */
                                 />
                             )
                         })
@@ -165,6 +168,9 @@ export default function About({ scrollUpFunction, styleScrollUp }) {
             <ScrollUp
                 scrollUpFunction={scrollUpFunction}
                 styleScrollUp={styleScrollUp}
+            />
+            <Burger
+                styleBurger={styleBurger}
             />
             <Footer
                 page="/about"

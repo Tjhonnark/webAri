@@ -164,9 +164,22 @@
     transform: translateY(-1px);
   }
   
-  
-  
   .input {
     display: none;
   }
   
+  @media only screen and (max-width: 450px) {
+    .container {
+      background-color: #fff;
+      width: 1000px;
+      padding: 25px;
+      border-radius: 25px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.5rem;
+      /* ANIMATION */
+      animation: PopUp 1s;
+    }
+  }

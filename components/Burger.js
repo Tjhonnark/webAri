@@ -19,10 +19,26 @@ export default function Burger({ styleBurger }) {
                         alt=""
                         width={100}
                         height={100} />
-                    <li><Link className={styles.menu__item} href="/">Inicio</Link></li>
-                    <li><Link className={styles.menu__item} href="/about">¿Quiénes somos?</Link></li>
-                    <li><Link className={styles.menu__item} href="/products">Productos</Link></li>
-                    <li><Link className={styles.menu__item} href="/contact">Contactos</Link></li>
+                    <li>
+                        <Link className={styles.menu__item} href="/">
+                            <i className="bi bi-house-fill"></i>
+                            Inicio
+                        </Link></li>
+                    <li>
+                        <Link className={styles.menu__item} href="/about">
+                            <i className="bi bi-people-fill"></i>
+                            ¿Quiénes somos?
+                        </Link></li>
+                    <li>
+                        <Link className={styles.menu__item} href="/products">
+                            <i className="bi bi-box-seam"></i>
+                            Productos
+                        </Link></li>
+                    <li>
+                        <Link className={styles.menu__item} href="/contact">
+                            <i className="bi bi-envelope-paper-fill"></i>
+                            Contactos
+                        </Link></li>
                 </ul>
             </div>
         </div>

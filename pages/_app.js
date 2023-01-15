@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap');
   }, [])
-  
+
   // Burger
   const [styleBurger, setStyleBurger] = useState(true);
 
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     addEventListener('scroll', (event) => {
       var scroll = document.documentElement.scrollTop;
-      
+
       if (scroll < 600) {
         setStyleScrollUp(true);
       } else {
@@ -44,7 +44,39 @@ function MyApp({ Component, pageProps }) {
       window.scrollTo(0, 0);
     }
   }
-  
+
+  //IMAGE
+  const [Image, setImage] = useState(true)
+
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      })
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    
+    var width = windowSize.width;
+    
+    if (width > 500) {
+      setImage(true);
+    } else {
+      setImage(false);
+    }
+    
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  console.log(Image)
 
   return (
     <div>
@@ -60,6 +92,7 @@ function MyApp({ Component, pageProps }) {
           scrollUpFunction={scrollUpFunction}
           styleScrollUp={styleScrollUp}
           styleBurger={styleBurger}
+          Image={Image}
         />
       </Layout>
 
