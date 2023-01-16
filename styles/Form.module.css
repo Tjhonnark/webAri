@@ -74,3 +74,21 @@
     transform: scale(0.95);
     transition: all 0.5s ease 0s;
   }
+
+  @media only screen and (max-width: 450px) {
+    .name {
+      flex-basis: 8rem;
+    }
+    .email {
+      flex-basis: 12rem;
+    }
+    .phone {
+      flex-basis: 7rem;
+    }
+    .affair {
+      flex-basis: 13rem;
+    }
+    .message {
+      flex-basis: 100%;
+    }
+  }

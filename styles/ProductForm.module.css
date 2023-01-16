@@ -190,18 +190,18 @@
       display: none;
     }
     .name {
-      flex-basis: 50%;
+      flex-basis: 139px;
     }
     .phone {
-      flex-basis: 42%;
+      flex-basis: 105px;
     }
     .email {
       padding: 0;
       margin: 0;
-      flex-basis: 100%;
+      flex-basis: 99%;
     }
     .message {
-      flex-basis: 100%;
+      flex-basis: 99%;
     }
     .send {
       padding: 1.3em 2em;
