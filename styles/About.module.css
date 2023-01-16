@@ -170,7 +170,7 @@
   
   /* SECTION 5 */
   .section5 {
-    padding-top: 5rem;
+    padding-top: 4rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -241,5 +241,8 @@
     .section4 {
       color: #fff;
       margin: 6rem 2rem;
+    }
+    .s5_text {
+      width: 80%;
     }
   }
