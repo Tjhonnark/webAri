@@ -52,7 +52,7 @@ const ProductForm = ({ products, productToggleSelect, modalForm, setModalForm, m
         sound.play()
         sound.volume = 0.2; */
     }
-    
+
     return (
         <>
             <form id="formulario" ref={form} onSubmit={sendEmail} className={modalForm ? styles.productForm : styles.productForm2} autoComplete="off">
@@ -93,20 +93,22 @@ const ProductForm = ({ products, productToggleSelect, modalForm, setModalForm, m
                             <textarea name='products'
                                 className={styles.input}
                                 value={productSelect}
-                                /* readOnly *//>
+                                /* readOnly */ />
                         </div>
-                        <button type="submit" value="Send" 
-                        className={styles.send}
-                        onClick={modal}
-                        >
-                            Enviar
-                        </button>
-                        <button
-                        className={styles.cancel} 
-                        onClick={modalClose}
-                        >
-                            Cancelar
-                        </button>
+                        <div className={styles.buttons}>
+                            <button type="submit" value="Send"
+                                className={styles.send}
+                                onClick={modal}
+                            >
+                                Enviar
+                            </button>
+                            <button
+                                className={styles.cancel}
+                                onClick={modalClose}
+                            >
+                                Cancelar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </form>

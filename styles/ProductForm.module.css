@@ -110,6 +110,10 @@
   .message {
     flex-basis: 100%;
   }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
   /* From uiverse.io */
   /* BUTTON SEND */
   .send {
@@ -171,7 +175,7 @@
   @media only screen and (max-width: 450px) {
     .container {
       background-color: #fff;
-      width: 1000px;
+      width: 95%;
       padding: 25px;
       border-radius: 25px;
       display: flex;
@@ -181,5 +185,28 @@
       gap: 0.5rem;
       /* ANIMATION */
       animation: PopUp 1s;
+    }
+    .products {
+      display: none;
+    }
+    .name {
+      flex-basis: 50%;
+    }
+    .phone {
+      flex-basis: 42%;
+    }
+    .email {
+      padding: 0;
+      margin: 0;
+      flex-basis: 100%;
+    }
+    .message {
+      flex-basis: 100%;
+    }
+    .send {
+      padding: 1.3em 2em;
+    }
+    .cancel {
+      padding: 1.3em 2em;
     }
   }
