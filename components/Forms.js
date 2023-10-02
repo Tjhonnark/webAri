@@ -38,7 +38,7 @@ const Forms = ({ modalFormSend, setModalFormSend }) => {
         <>
             <form ref={form} onSubmit={sendEmail} className={styles.form} autoComplete="off">
                 <div className={styles.titleForm}>
-                    <h2>Hable con nosotros</h2>
+                    <h3>Contáctame</h3>
                 </div>
                 <div className={styles.name}>
                     <label>Nombre</label>

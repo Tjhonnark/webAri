@@ -81,8 +81,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <title>Conos y Waffles Clarita</title>
-        <meta name="description" content="Hacemos tu mundo más dulce y feliz" />
+        <title>B.B.P. Bethancourt</title>
+        <meta name="Ariadna García" content="Ariadna García / B.B.P. Bethancourt" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>

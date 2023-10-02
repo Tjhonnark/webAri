@@ -1,26 +1,23 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 /* COMPONENTS */
-import Burger from './Burger'
+import Burger from "./Burger";
 /* STYLES */
-import styles from '../styles/Navbar.module.css'
+import styles from "../styles/Navbar.module.css";
 
 export default function Navbar() {
-
   const link = () => {
-    var sound = new Audio('sounds/close.wav')
-    sound.play()
-  }
+    var sound = new Audio("sounds/close.wav");
+    sound.play();
+  };
 
   return (
     <nav className={styles.header}>
       <div className={styles.container}>
-        <Image
-          src="/logo.png"
-          className={styles.logo}
-          alt=""
-          width={100}
-          height={100} />
+        <div className={styles.logoA}>
+          <h1>Ariadna García Rodríguez (BBP Bethancourt)</h1>
+        </div>
+        <div className={styles.line}></div>
         <div className={styles.navbar}>
           <div className={styles.item}>
             <Link href="/">
@@ -28,23 +25,27 @@ export default function Navbar() {
             </Link>
           </div>
           <div className={styles.item}>
-            <Link href="/about">
-              <i className="bi bi-people-fill"></i>¿Quiénes somos?
+            <Link href="/quien">
+              <i className="bi bi-people-fill"></i>¿Quién?
             </Link>
           </div>
           <div className={styles.item}>
-            <Link href="/products">
-              <i className="bi bi-box-seam"></i>Productos
+            <Link href="/haceres">
+              <i className="bi bi-box-seam"></i>Haceres
             </Link>
           </div>
           <div className={styles.item}>
-            <Link href="/contact">
-              <i className="bi bi-envelope-paper-fill"></i>Contactos
+            <Link href="/tallerCultura">
+              <i className="bi bi-envelope-paper-fill"></i>Taller Cultura
+            </Link>
+          </div>
+          <div className={styles.item}>
+            <Link href="/contacto">
+              <i className="bi bi-envelope-paper-fill"></i>Contacto
             </Link>
           </div>
         </div>
-        <Burger />
       </div>
     </nav>
-  )
+  );
 }

@@ -1,7 +1,6 @@
 .footer {
-  background-color: #550219;
+  background: linear-gradient(4deg, rgba(54,54,54,1) 0%, rgba(0,0,0,1) 100%);
   flex-basis: 100%;
-  margin-top: 3rem;
   padding: 2rem 0;
   border-top: 1px solid #ccccccaf;
   display: flex;
@@ -69,17 +68,11 @@
   color: aliceblue;
   text-decoration: none;
 }
-/* INFO */
-.info {
-  color: azure;
+
+/* FORM */
+.contact_form {
+  flex-basis: 550px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-basis: 400px;
-  gap: 1em;
-}
-.info a {
-  color: #fff;
 }
 
 /* WEBAPP */
