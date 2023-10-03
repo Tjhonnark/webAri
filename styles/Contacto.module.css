@@ -1,0 +1,145 @@
+.body {
+  background-image: linear-gradient(45deg, #acacac 0%, #ffffff 100%);
+}
+
+/* SECTION 1 */
+.section1 {
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.imageS1 {
+}
+.text_s1 {
+  color: #000;
+  width: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.text_s1 h1 {
+  margin: 0;
+  text-align: start;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.text_s1 p {
+  width: 90%;
+  margin: 0;
+}
+
+/* From uiverse.io by @adamgiebl */
+.buttontest {
+  text-decoration: none;
+}
+.buttonS1 {
+  font-family: inherit;
+  font-size: 20px;
+  text-decoration: none;
+  background: #fff;
+  color: #000;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.buttonS1 span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonS1 svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttonS1:hover .svgWrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.buttonS1:hover svg {
+  color: #000;
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.buttonS1:hover span {
+  color: #000;
+  transform: translateX(5em);
+}
+
+.buttonS1:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+/* SECTION 2 */
+.section2 {
+  height: 700px;
+  padding: 6rem 0 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* FORM */
+.contact_form {
+  flex-basis: 550px;
+  padding: 1.5em;
+  border-radius: 25px;
+  display: flex;
+}
+
+@media only screen and (max-width: 450px) {
+  .imageS1 {
+    width: 90%;
+    height: 100%;
+    margin-top: 2rem;
+  }
+  .text_s1 {
+    width: 80%;
+  }
+  .text_s1 h1 {
+    font-size: 3rem;
+  }
+  .map {
+    width: 80%;
+    height: 400px;
+  }
+  .section3 {
+    height: 100%;
+  }
+  .imageS3 {
+    width: 80%;
+    height: 90%;
+    margin-top: 7rem;
+  }
+  .contact_form {
+    margin-top: 2rem;
+    flex-basis: 550px;
+    padding: 1.5em;
+    border-radius: 25px;
+    display: flex;
+  }
+}
