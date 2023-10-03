@@ -20,7 +20,7 @@ export default function Quien({ scrollUpFunction, styleScrollUp, styleBurger }) 
             <section id='section1' className={styles.section1}>
                 <Image
                     className={styles.imageS1}
-                    src="/BBPBethancourt.jpg"
+                    src="/bbpbethancourt.png"
                     alt=""
                     width={1400}
                     height={550}

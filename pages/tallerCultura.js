@@ -44,7 +44,7 @@ export default function TallerCultura({ scrollUpFunction, styleScrollUp, styleBu
                 styleBurger={styleBurger}
             />
             <Footer
-                page="/"
+                page="/tallerCultura"
                 section1="Section 1"
                 section2="Section 2"
                 section3="Section 3"
