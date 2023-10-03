@@ -44,6 +44,7 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
                         priority
                     />
                 </div>
+                
             </section>
             <section id='section1' className={styles.section3}>
                 <Image
