@@ -25,14 +25,14 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
                     height={550}
                 />
                 <div className={styles.text1_a1_s1}>
-                    <p>"A la esperanza, aniquiladora de todo pesimismo"</p>
+                    <p>&quot;A la esperanza, aniquiladora de todo pesimismo&quot;</p>
                     <Link href="#section2">Abrazos para una nariz sin olfato</Link>
                 </div>
             </section>
             <section id='section2' className={styles.section2}>
                 <div className={styles.texto}>
                     <h2>Abrazos para una nariz sin  olfato</h2>
-                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia iusto tenetur possimus dolor voluptas, modi, cum eius molestias saepe at aut voluptatum deserunt facere aliquam officia labore, nam dicta a." -- Ariadna Rodríguez</p>
+                    <p>&quot;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia iusto tenetur possimus dolor voluptas, modi, cum eius molestias saepe at aut voluptatum deserunt facere aliquam officia labore, nam dicta a.&quot; -- Ariadna Rodríguez</p>
                 </div>
                 <div className={styles.portada}>
                     <Image

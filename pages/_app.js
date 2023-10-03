@@ -46,8 +46,9 @@ function MyApp({ Component, pageProps }) {
   }
 
   //IMAGE
+  /*
   const [Image, setImage] = useState(true)
-
+  
   const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
@@ -76,7 +77,7 @@ function MyApp({ Component, pageProps }) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  console.log(Image)
+  */
 
   return (
     <div>
@@ -92,7 +93,6 @@ function MyApp({ Component, pageProps }) {
           scrollUpFunction={scrollUpFunction}
           styleScrollUp={styleScrollUp}
           styleBurger={styleBurger}
-          Image={Image}
         />
       </Layout>
 
