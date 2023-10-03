@@ -26,7 +26,7 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
                 />
                 <div className={styles.text1_a1_s1}>
                     <p>"A la esperanza, aniquiladora de todo pesimismo"</p>
-                    <Link href="#section2">Abrazos para una nariz sin olfato &darr;</Link>
+                    <Link href="#section2">Abrazos para una nariz sin olfato</Link>
                 </div>
             </section>
             <section id='section2' className={styles.section2}>
