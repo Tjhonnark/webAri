@@ -65,7 +65,7 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
                             objectPosition="15%"
                         /> */}
                 <div className={styles.text1_a1_s3}>
-                    <p>Festival Internacional de Poesía de Penonomé en Abril, 2013</p>
+                    <p>Festival Internacional de Poesía de Penonomé en Abril, 2014</p>
                 </div>
             </section>
             <ScrollUp

@@ -35,30 +35,29 @@
 
 .text1_a1_s1 {
   color: rgb(255, 255, 255);
-  width: 50%;
+  width: 40%;
+  height: 550px;
   margin-right: 10rem;
   font-family: "papyrus";
-  text-align: center;
+  text-align: end;
   position: absolute;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  align-items: flex-end;
+  justify-content: space-between;
   z-index: 1;
 }
 
 .text1_a1_s1 h1 {
   font-size: 1.1rem;
-  margin-right: 5rem;
   width: 100%;
+  margin-top: 5rem;
   text-align: end;
 }
 
 .poema {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
   gap: 0.5rem;
 }
 
@@ -76,6 +75,7 @@
 
 /* From uiverse.io */
 .text1_a1_s1 a {
+  margin-bottom: 2rem;
   padding: 1.3em 3em;
   font-size: 12px;
   text-decoration: none;

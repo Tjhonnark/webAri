@@ -31,12 +31,20 @@ export default function Navbar() {
           </div>
           <div className={styles.item}>
             <Link href="/haceres">
-              <i className="bi bi-box-seam"></i>Haceres
+              <i class="bi bi-pencil-fill"></i>Haceres
             </Link>
           </div>
           <div className={styles.item}>
             <Link href="/tallerCultura">
-              <i className="bi bi-envelope-paper-fill"></i>Taller Cultura
+              <Image
+                className={styles.group}
+                src="/group.png"
+                alt="Ariadna Garcia"
+                width={30}
+                height={30}
+                priority
+              />
+              Taller Cultura
             </Link>
           </div>
           <div className={styles.item}>

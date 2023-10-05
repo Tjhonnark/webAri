@@ -94,22 +94,7 @@
   }
 }
 
-/* SECTION 2 */
-.section2 {
-  height: 700px;
-  padding: 6rem 0 2rem 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-/* FORM */
-.contact_form {
-  flex-basis: 550px;
-  padding: 1.5em;
-  border-radius: 25px;
-  display: flex;
-}
+
 
 @media only screen and (max-width: 450px) {
   .imageS1 {
@@ -122,24 +107,5 @@
   }
   .text_s1 h1 {
     font-size: 3rem;
-  }
-  .map {
-    width: 80%;
-    height: 400px;
-  }
-  .section3 {
-    height: 100%;
-  }
-  .imageS3 {
-    width: 80%;
-    height: 90%;
-    margin-top: 7rem;
-  }
-  .contact_form {
-    margin-top: 2rem;
-    flex-basis: 550px;
-    padding: 1.5em;
-    border-radius: 25px;
-    display: flex;
   }
 }

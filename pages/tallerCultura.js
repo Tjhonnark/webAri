@@ -19,7 +19,7 @@ export default function TallerCultura({ scrollUpFunction, styleScrollUp, styleBu
                 <div className={styles.photo}>
                     <Image
                         className={styles.imageS1}
-                        src="/logo.jpg"
+                        src="/logo.png"
                         alt=""
                         width={500}
                         height={350}

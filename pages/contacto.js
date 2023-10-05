@@ -25,8 +25,8 @@ const Contacto = ({ scrollUpFunction, styleScrollUp, styleBurger }) => {
                     className={styles.imageS1}
                     src="/ContactUs2.png"
                     alt=""
-                    width={700}
-                    height={600}
+                    width={600}
+                    height={500}
                     objectFit="contain"
                 />
                 <div className={styles.text_s1}>
