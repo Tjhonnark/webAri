@@ -5,8 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer'
 import ScrollUp from '../components/ScrollUp'
 import Burger from '../components/Burger';
-/* DATA */
-import { clients } from '../components/data/dataClients';
+import Carrusel from '../components/Carrusel';
 /* STYLES */
 import styles from '../styles/Haceres.module.css'
 
@@ -179,27 +178,7 @@ export default function Haceres({ scrollUpFunction, styleScrollUp, styleBurger }
                 </div>
                 <div className={styles.row3}>
                     <div className={styles.evento1}>
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="/bbpbethancourt.png" alt="First slide" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="/logo.png" alt="Second slide" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="/books.jpg" alt="Third slide" />
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
+                        <Carrusel />
                     </div>
                     <div className={styles.evento2}>
                         <Image
