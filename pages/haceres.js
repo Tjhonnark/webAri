@@ -113,8 +113,8 @@ export default function Haceres({ scrollUpFunction, styleScrollUp, styleBurger }
                             className={styles.imgEvento2}
                             src="/example.jpg"
                             alt="Ariadna Garcia"
-                            width={300}
-                            height={450}
+                            width={320}
+                            height={400}
                             priority
                         />
                         <div className={styles.textEvento2}>
@@ -160,10 +160,62 @@ export default function Haceres({ scrollUpFunction, styleScrollUp, styleBurger }
                             Link
                         </button>
                     </div>
+                    <div className={styles.evento3}>
+                        <Image
+                            className={styles.imgEvento1}
+                            src="/example.jpg"
+                            alt="Ariadna Garcia"
+                            width={320}
+                            height={300}
+                            priority
+                        />
+                        <p>00/00/0000</p>
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolore in non veritatis dolores autem pariatur, cupiditate odio sapiente deleniti maxime placeat cum nobis corporis facere ipsa voluptas iste eaque.</p>
+                        <button className={styles.button}>
+                            Link
+                        </button>
+                    </div>
                 </div>
                 <div className={styles.row3}>
                     <div className={styles.evento1}>
-
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="/bbpbethancourt.png" alt="First slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="/logo.png" alt="Second slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="/books.jpg" alt="Third slide" />
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.evento2}>
+                        <Image
+                            className={styles.imgEvento1}
+                            src="/example.jpg"
+                            alt="Ariadna Garcia"
+                            width={320}
+                            height={300}
+                            priority
+                        />
+                        <p>00/00/0000</p>
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolore in non veritatis dolores autem pariatur, cupiditate odio sapiente deleniti maxime placeat cum nobis corporis facere ipsa voluptas iste eaque.</p>
+                        <button className={styles.button}>
+                            Link
+                        </button>
                     </div>
                 </div>
             </section>
