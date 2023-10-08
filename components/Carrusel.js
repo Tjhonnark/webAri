@@ -1,125 +1,49 @@
-import Link from "next/link";
-import { useState } from "react";
-/* STYLES */
-import styles from "../styles/Carrusel.module.scss";
+import React, { useRef, useState } from "react";
+import Image from "next/image";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Carrusel() {
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+/* STYLES */
+import styles from "../styles/Carrusel.module.css";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
+
+export default function App() {
   return (
-    <div>
-      <section>
-        <div className={styles.container}>
-          <div className={styles.carousel}>
-            <input type="radio" name="slides" checked="checked" id="slide-1" />
-            <input type="radio" name="slides" id="slide-2" />
-            <input type="radio" name="slides" id="slide-3" />
-            <input type="radio" name="slides" id="slide-4" />
-            <input type="radio" name="slides" id="slide-5" />
-            <input type="radio" name="slides" id="slide-6" />
-            <ul className={styles.carousel__slides}>
-              <li className={styles.carousel__slide}>
-                <figure>
-                  <div>
-                    <img src="https://picsum.photos/id/1041/800/450" alt="" />
-                  </div>
-                  <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span className={styles.credit}>Photo: Tim Marshall</span>
-                  </figcaption>
-                </figure>
-              </li>
-              <li className={styles.carousel__slide}>
-                <figure>
-                  <div>
-                    <img src="https://picsum.photos/id/1043/800/450" alt="" />
-                  </div>
-                  <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span className={styles.credit}>Photo: Christian Joudrey</span>
-                  </figcaption>
-                </figure>
-              </li>
-              <li className={styles.carousel__slide}>
-                <figure>
-                  <div>
-                    <img src="https://picsum.photos/id/1044/800/450" alt="" />
-                  </div>
-                  <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span className={styles.credit}>Photo: Steve Carter</span>
-                  </figcaption>
-                </figure>
-              </li>
-              <li className={styles.carousel__slide}>
-                <figure>
-                  <div>
-                    <img src="https://picsum.photos/id/1045/800/450" alt="" />
-                  </div>
-                  <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span className={styles.credit}>
-                      Photo: Aleksandra Boguslawska
-                    </span>
-                  </figcaption>
-                </figure>
-              </li>
-              <li className={styles.carousel__slide}>
-                <figure>
-                  <div>
-                    <img src="https://picsum.photos/id/1049/800/450" alt="" />
-                  </div>
-                  <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span className={styles.credit}>Photo: Rosan Harmens</span>
-                  </figcaption>
-                </figure>
-              </li>
-              <li className={styles.carousel__slide}>
-                <figure>
-                  <div>
-                    <img src="https://picsum.photos/id/1052/800/450" alt="" />
-                  </div>
-                  <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span className={styles.credit}>Photo: Annie Spratt</span>
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-            <ul className={styles.carousel__thumbnails}>
-              <li>
-                <label for="slide-1">
-                  <img src="https://picsum.photos/id/1041/150/150" alt="" />
-                </label>
-              </li>
-              <li>
-                <label for="slide-2">
-                  <img src="https://picsum.photos/id/1043/150/150" alt="" />
-                </label>
-              </li>
-              <li>
-                <label for="slide-3">
-                  <img src="https://picsum.photos/id/1044/150/150" alt="" />
-                </label>
-              </li>
-              <li>
-                <label for="slide-4">
-                  <img src="https://picsum.photos/id/1045/150/150" alt="" />
-                </label>
-              </li>
-              <li>
-                <label for="slide-5">
-                  <img src="https://picsum.photos/id/1049/150/150" alt="" />
-                </label>
-              </li>
-              <li>
-                <label for="slide-6">
-                  <img src="https://picsum.photos/id/1052/150/150" alt="" />
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
+    <>
+      <Swiper
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          dynamicBullets: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className={styles.swiper}
+      >
+        <SwiperSlide className={styles.SwiperSlide}>
+          <img className={styles.img} src="/bbpbethancourt.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide className={styles.SwiperSlide}>
+          <img
+            className={styles.img}
+            src="/companeros-universidad-estudiando-juntos.jpg"
+            alt=""
+          />
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 }
