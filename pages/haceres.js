@@ -25,10 +25,10 @@ export default function Haceres({ scrollUpFunction, styleScrollUp, styleBurger }
                     height={550}
                 />
                 <div className={styles.text1_a1_s1}>
-                    <h2>HACERES</h2>
+                    <h2>En construcción</h2>
                 </div>
             </section>
-            <section className={styles.publicaciones}>
+            {/*<section className={styles.publicaciones}>
                 <h2>
                     Publicaciones
                 </h2>
@@ -41,7 +41,7 @@ export default function Haceres({ scrollUpFunction, styleScrollUp, styleBurger }
                                 alt=""
                                 width={30}
                                 height={30}
-                            /* objectFit="cover" */
+                             objectFit="cover" 
                             />
                         </div>
                         <div className={styles.texto}>
@@ -58,7 +58,6 @@ export default function Haceres({ scrollUpFunction, styleScrollUp, styleBurger }
                             Eyra Harbar <br />Abogada
                         </h4>
                     </div>
-                    {/* LIBRO */}
                     <div className={styles.libro1}>
                         <Image
                             className={styles.libro1img}
@@ -198,6 +197,7 @@ export default function Haceres({ scrollUpFunction, styleScrollUp, styleBurger }
                     </div>
                 </div>
             </section>
+            */}
             <ScrollUp
                 scrollUpFunction={scrollUpFunction}
                 styleScrollUp={styleScrollUp}
@@ -206,11 +206,10 @@ export default function Haceres({ scrollUpFunction, styleScrollUp, styleBurger }
                 styleBurger={styleBurger}
             />
             <Footer
-                page="/quien"
+                page="/haceres"
                 section1="Section 1"
                 section2="Section 2"
                 section3="Section 3"
-                section4="Section 4"
             />
         </div>
     )

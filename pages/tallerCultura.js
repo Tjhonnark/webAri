@@ -14,7 +14,7 @@ export default function TallerCultura({ scrollUpFunction, styleScrollUp, styleBu
     return (
         <div className={styles.body}>
             <Navbar />
-            <section className={styles.sectionMain}>
+            <section id='section1' className={styles.sectionMain}>
 
                 <div className={styles.photo}>
                     <Image
@@ -46,9 +46,6 @@ export default function TallerCultura({ scrollUpFunction, styleScrollUp, styleBu
             <Footer
                 page="/tallerCultura"
                 section1="Section 1"
-                section2="Section 2"
-                section3="Section 3"
-                section4="Section 4"
             />
         </div>
     )

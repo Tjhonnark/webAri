@@ -32,9 +32,9 @@ const Contacto = ({ scrollUpFunction, styleScrollUp, styleBurger }) => {
                 <div className={styles.text_s1}>
                     <h1>Blog personal</h1>
                     <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quasi perferendis maiores nesciunt ea sint nam dicta commodi veritatis ullam illum cum quod quo voluptas, minus perspiciatis aspernatur laborum inventore!
+                    En construcción
                     </p>
-                    <Link href="https://7hosoft.vercel.app" className={styles.buttontest} >
+                    <Link href="#footer" className={styles.buttontest} >
                         <div className={styles.buttonS1}>
                             <div className={styles.svgWrapper1}>
                                 <div className={styles.svgWrapper}>

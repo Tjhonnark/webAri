@@ -10,7 +10,7 @@ const Forms = ({ modalFormSend, setModalFormSend }) => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_h6a8jse', 'template_3jv6aqt', form.current, 'JzMjMHeAhJEb6uKG5')
+        emailjs.sendForm('service_ce25p3p', 'template_3jv6aqt', form.current, 'JzMjMHeAhJEb6uKG5')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

@@ -69,6 +69,11 @@
   text-decoration: none;
 }
 
+.group {
+  margin-left: -0.2rem;
+  margin-right: 0.2rem;
+}
+
 /* FORM */
 .contact_form {
   flex-basis: 550px;
@@ -91,14 +96,14 @@
 .webapp_title {
   color: #fff;
   margin-left: 0.5rem;
-  text-shadow: #fc3c74 3px 2px;
+  text-shadow: #000 3px 2px;
   font-size: 2rem;
   font-weight: bold;
   transition: all 0.3s ease 0s;
 }
 .webapp_title:hover {
-  color: #fc3c74;
-  text-shadow: #fff 3px 2px;
+  color: #fff;
+  text-shadow: #000 3px 2px;
   transform: scale(1.1);
   transition: all 0.3s ease 0s;
 }

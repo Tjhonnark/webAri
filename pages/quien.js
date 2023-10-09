@@ -60,19 +60,19 @@ export default function Quien({ scrollUpFunction, styleScrollUp, styleBurger }) 
                         Cuenta con experiencia internacional y experticia cultural desarrollada en Estados
                         Unidos, Francia, España, Grecia y Panamá como docente-formadora, investigadora,
                         escritora, traductora y editora de materiales impresos. Es cofundadora y vicepresidenta
-                        de la Asociación sin fines de lucro <strong>Taller Cultura</strong> (2013 al presente), donde ejerce,
-                        además, como directora de Taller Cultura Publicaciones. Igualmente, forma parte de la
-                        organización no gubernamental <strong>Con Igualdad</strong> (desde 2021 al presente), donde funge
+                        de la Asociación sin fines de lucro <strong><i>Taller Cultura</i></strong> (2013 al presente), donde ejerce,
+                        además, como directora de <i>Taller Cultura Publicaciones</i>. Igualmente, forma parte de la
+                        organización no gubernamental <strong><i>Con Igualdad</i></strong> (desde 2021 al presente), donde funge
                         como vocal. De 2015 a 2019 ejerció como enlace técnico en Asuntos Internacionales
                         para organismos y conferencias internacionales con carácter de representación de país
                         en la Oficina de Cooperación Internacional del entonces Instituto Nacional de la Mujer
                         de la República de Panamá (INAMU). Tiene en su haber publicaciones en escritura
-                        creativa, en Panamá y en el extranjero, bajo el seudónimo literario <strong>B.B.P.
-                            Bethancourt</strong> (en honor a su madre y sus abuelas), entre estas el Abrazos de una nariz sin olfato, España 2012;
-                        Patrimonio Intangible, El Salvador 2018; Opus sostenido: alegoría musical de
-                        Abrazos de una nariz sin olfato, Panamá 2014 (poesía sonora). Como ensayista
-                        destaca un artículo conocido en el medio académico nacional titulado “Vasco Núñez de
-                        Balboa o la geopsiquis de una nación” (2001) el cual trata sobre la construcción de la
+                        creativa, en Panamá y en el extranjero, bajo el seudónimo literario <strong><i>B.B.P.
+                            Bethancourt</i></strong> (en honor a su madre y sus abuelas), <strong>entre estas el Abrazos de una nariz sin olfato</strong>, España 2012;
+                            <strong>Patrimonio Intangible</strong>, El Salvador 2018; <strong>Opus sostenido: alegoría musical de
+                        Abrazos de una nariz sin olfato</strong>, Panamá 2014 (poesía sonora). Como ensayista
+                        destaca un artículo conocido en el medio académico nacional titulado <i>“Vasco Núñez de
+                        Balboa o la geopsiquis de una nación” (2001)</i> el cual trata sobre la construcción de la
                         identidad nacional panameña a través de la figura del conquistador. Sus áreas de
                         interés son los estudios espaciales (de corte geo-históricos) y lingüísticos-literarios,
                         cultura y sociedad, derechos humanos de las mujeres y cooperación internacional.
@@ -94,8 +94,6 @@ export default function Quien({ scrollUpFunction, styleScrollUp, styleBurger }) 
                 page="/quien"
                 section1="Section 1"
                 section2="Section 2"
-                section3="Section 3"
-                section4="Section 4"
             />
         </div>
     )

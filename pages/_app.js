@@ -85,7 +85,7 @@ function MyApp({ Component, pageProps }) {
         <title>B.B.P. Bethancourt</title>
         <meta name="Ariadna García" content="Ariadna García / B.B.P. Bethancourt" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <Component
