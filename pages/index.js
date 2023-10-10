@@ -29,6 +29,19 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
           <Link href="#section2">Abrazos para una nariz sin olfato</Link>
         </div>
       </section>
+      <section id="section1" className={styles.sectionMini1}>
+        <Image
+          className={styles.imgSM1}
+          src="/typeWriter2.png"
+          alt=""
+          width={450}
+          height={250}
+        />
+        <div className={styles.textSM1}>
+          <p>&quot;A la esperanza, aniquiladora de todo pesimismo&quot;</p>
+          <Link href="#section2">Abrazos para una nariz sin olfato</Link>
+        </div>
+      </section>
       <section id="section2" className={styles.section2}>
         <div className={styles.texto}>
           <h2>Abrazos para una nariz sin olfato</h2>
