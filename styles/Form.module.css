@@ -1,5 +1,5 @@
 .form {
-    color: rgb(0, 0, 0);
+    color: #fff;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -24,7 +24,7 @@
   .form div input,
   .form div textarea {
     background: none;
-    color: rgb(0, 0, 0);
+    color: #fff;
     width: 100%;
     border: none;
     outline: 0;

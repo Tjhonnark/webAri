@@ -32,10 +32,10 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
       <section id="section1" className={styles.sectionMini1}>
         <Image
           className={styles.imgSM1}
-          src="/typeWriter2.png"
+          src="/closeup-metal-parts-old-typewriters.jpg"
           alt=""
           width={450}
-          height={250}
+          height={550}
         />
         <div className={styles.textSM1}>
           <p>&quot;A la esperanza, aniquiladora de todo pesimismo&quot;</p>

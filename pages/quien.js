@@ -63,13 +63,12 @@ export default function Quien({ scrollUpFunction, styleScrollUp, styleBurger }) 
                         de la Asociación sin fines de lucro <strong><i>Taller Cultura</i></strong> (2013 al presente), donde ejerce,
                         además, como directora de <i>Taller Cultura Publicaciones</i>. Igualmente, forma parte de la
                         organización no gubernamental <strong><i>Con Igualdad</i></strong> (desde 2021 al presente), donde funge
-                        como vocal. De 2015 a 2019 ejerció como enlace técnico en Asuntos Internacionales
-                        para organismos y conferencias internacionales con carácter de representación de país
-                        en la Oficina de Cooperación Internacional del entonces Instituto Nacional de la Mujer
+                        como vocal. De 2015 a 2019 ejerció como enlace técnico para organismos y conferencias internacionales con carácter de representación de país
+                        en la Oficina de Cooperación Internacional, del entonces Instituto Nacional de la Mujer
                         de la República de Panamá (INAMU). Tiene en su haber publicaciones en escritura
                         creativa, en Panamá y en el extranjero, bajo el seudónimo literario <strong><i>B.B.P.
-                            Bethancourt</i></strong> (en honor a su madre y sus abuelas), <strong>entre estas el Abrazos de una nariz sin olfato</strong>, España 2012;
-                            <strong>Patrimonio Intangible</strong>, El Salvador 2018; <strong>Opus sostenido: alegoría musical de
+                            Bethancourt</i></strong> (en honor a su madre y sus abuelas), entre estas <strong>Abrazos de una nariz sin olfato</strong>, España 2012;
+                            <strong> Patrimonio Intangible</strong>, El Salvador 2018; <strong>Opus sostenido: alegoría musical de
                         Abrazos de una nariz sin olfato</strong>, Panamá 2014 (poesía sonora). Como ensayista
                         destaca un artículo conocido en el medio académico nacional titulado <i>“Vasco Núñez de
                         Balboa o la geopsiquis de una nación” (2001)</i> el cual trata sobre la construcción de la
