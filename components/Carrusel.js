@@ -34,12 +34,42 @@ export default function App() {
         className={styles.swiper}
       >
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/bbpbethancourt.png" alt="" />
+          <img className={styles.img} src="/Foto1b.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
           <img
             className={styles.img}
-            src="/companeros-universidad-estudiando-juntos.jpg"
+            src="/Foto2b.jpg"
+            alt=""
+            objectFit="contain"
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles.SwiperSlide}>
+          <img
+            className={styles.img}
+            src="/Foto3b.jpg"
+            alt=""
+            objectFit="contain"
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles.SwiperSlide}>
+          <img
+            className={styles.img}
+            src="/Foto4.jpg"
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles.SwiperSlide}>
+          <img
+            className={styles.img}
+            src="/Foto5b.jpg"
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles.SwiperSlide}>
+          <img
+            className={styles.img}
+            src="/Foto6b.jpg"
             alt=""
           />
         </SwiperSlide>

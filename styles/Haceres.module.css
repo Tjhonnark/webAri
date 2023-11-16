@@ -57,10 +57,8 @@
 
 /* SECTION 2 */
 .publicaciones {
-  background-color: red;
-  padding: 3rem 6rem 0 6rem;
+  padding: 6rem 6rem 6rem 6rem;
   width: 100%;
-  height: 30rem;
 }
 
 .publicaciones h2 {
@@ -68,19 +66,17 @@
 }
 
 .container {
-  background-color: blue;
   width: 100%;
-  height: 22rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 0;
+  gap: 3rem;
 }
 
 .libro1 {
-  width: 20rem;
+  width: 25rem;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -89,102 +85,97 @@
 }
 
 .libro1img {
+  border: 2px solid #000;
 }
 
 .libro1 h3 {
+  font-size: 1.3rem;
   text-align: center;
 }
 
-.cardLeft {
-  background-color: #b1b1b1;
+/* COMENTARIOS */
+.comentarios {
+  width: 35rem;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.5rem;
-  flex: 1;
-  padding: 1rem 1rem 1rem 1rem;
+  flex-flow: row wrap;
+  align-items: start;
+  gap: 2rem;
+}
+
+.comentario {
+  background-color: #fff;
+  width: 15rem;
+  margin-left: 10rem;
+  padding: 1rem;
+  border: none;
   border-radius: 1rem;
-  border: 1px solid #0000002e;
-  cursor: pointer;
 }
-
-.comillas {
-  width: 100%;
-}
-
-.texto p {
-  font-size: 1rem;
-  display: none;
-}
-
-.cardLeft h4 {
-  width: 100%;
-}
-
-.cardLeft:hover {
-  width: 250px; /* Ancho aumentado al pasar el mouse */
+.comentario:hover {
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   transform: scale(1.1);
   transition: all 0.5s ease;
-  transform-origin: center;
+
 }
-
-.cardLeft:hover .texto p {
-  display: block;
-}
-
-
-
-/* CARDRIGHT */
-.cardRight {
-  background-color: #b1b1b1;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 0rem;
-  padding: 2.5rem 1.2rem 1rem 1.2rem;
+.comentario2 {
+  background-color: #fff;
+  width: 15rem;
+  padding: 1rem;
+  border: none;
   border-radius: 1rem;
-  border: 1px solid #0000002e;
+}
+.comentario2:hover {
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
-.cardRight p {
-  background-color: aqua;
-  color: #fff;
-  width: 100%;
-  height: 0rem;
-  margin-bottom: 1rem;
-  text-align: end;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 5rem;
-  font-weight: 500;
-  transform: rotate(180deg);
-  position: absolute;
-  left: 63.1rem;
+.comentario3 {
+  background-color: #fff;
+  width: 15rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+.comentario3:hover {
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
-.cardRight h4 {
-  background-color: green;
+.comentario4 {
+  background-color: #fff;
+  width: 15rem;
+  margin-left: 10rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+.comentario4:hover {
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.cart2 {
+  display: none;
 }
 
 /* SECTION 3 */
 .trayectoria {
   width: 100%;
-  padding: 3rem 6rem 0 6rem;
+  padding: 6rem 6rem 0 6rem;
   display: flex;
   flex-flow: row wrap;
 }
 
 .trayectoria h2 {
   width: 100%;
-  background-color: aqua;
   font-size: 2rem;
   text-align: center;
 }
 
 .row1 {
   width: 100%;
-  background-color: red;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -193,7 +184,6 @@
 
 /* EVENTO 1 */
 .row1 .evento1 {
-  background-color: blue;
   width: 20rem;
   height: 39rem;
 }
@@ -204,7 +194,6 @@
 
 /* EVENTO 2 */
 .row1 .evento2 {
-  background-color: blue;
   width: 30rem;
   margin-top: 5rem;
   display: flex;
@@ -220,7 +209,6 @@
 }
 
 .row1 .textEvento2 {
-  background-color: aqua;
   width: 20rem;
   padding-top: 2rem;
   margin-right: 3rem;
@@ -234,7 +222,6 @@
 /* ROW2 */
 .row2 {
   width: 100%;
-  background-color: red;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -242,7 +229,6 @@
 
 /* EVENTO 1 */
 .row2 .evento1 {
-  background-color: blue;
   width: 20rem;
   height: 39rem;
   margin-top: 5rem;
@@ -254,7 +240,6 @@
 
 /* EVENTO 2 */
 .row2 .evento2 {
-  background-color: rgb(0, 255, 13);
   width: 20rem;
   height: 44rem;
 }
@@ -265,7 +250,6 @@
 
 /* EVENTO 3 */
 .row2 .evento3 {
-  background-color: blue;
   width: 20rem;
   height: 39rem;
   margin-top: 5rem;
@@ -278,7 +262,6 @@
 /* ROW3 */
 .row3 {
   width: 100%;
-  background-color: red;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -286,18 +269,22 @@
 
 /* EVENTO 1 */
 .row3 .evento1 {
-  background-color: blue;
   width: 45rem;
-  height: 25rem;
+  height: 30rem;
   margin-top: 4rem;
   border: 3px solid #000;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
 }
 
-
+.row3 .evento1 p {
+  width: 100%;
+  text-align: center;
+}
 
 /* EVENTO 2 */
 .row3 .evento2 {
-  background-color: blue;
   width: 20rem;
   height: 39rem;
   margin-top: 2rem;
@@ -315,6 +302,7 @@
   cursor: pointer;
   position: relative;
   border: none;
+  text-decoration: none;
   border-bottom: 3px solid #000;
   background: none;
   transition: all 0.3s ease 0s;
@@ -322,6 +310,7 @@
 
 .button:hover {
   transform: translateY(-7px);
+  color: #000;
 }
 
 

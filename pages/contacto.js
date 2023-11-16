@@ -23,13 +23,13 @@ const Contacto = ({ scrollUpFunction, styleScrollUp, styleBurger }) => {
             <section id='section1' className={styles.section1}>
                 <Image
                     className={styles.imageS1}
-                    src="/ContactUs2.png"
+                    src="/YO.jpg"
                     alt=""
-                    width={600}
-                    height={500}
+                    width={2000}
+                    height={700}
                     objectFit="contain"
                 />
-                <div className={styles.text_s1}>
+                {/*<div className={styles.text_s1}>
                     <h1>Blog personal</h1>
                     <p>
                     En construcción
@@ -47,7 +47,7 @@ const Contacto = ({ scrollUpFunction, styleScrollUp, styleBurger }) => {
                             <span>Blog</span>
                         </div>
                     </Link>
-                </div>
+    </div>*/}
             </section>
             <ScrollUp
                 scrollUpFunction={scrollUpFunction}
