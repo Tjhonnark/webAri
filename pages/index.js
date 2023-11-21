@@ -26,8 +26,18 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
           height={550}
         />
         <div className={styles.text1_a1_s1}>
-          <p>&quot;A la esperanza, aniquiladora de todo pesimismo&quot;</p>
-          <Link href="#section2">Abrazos para una nariz sin olfato</Link>
+          <div className={styles.buttons}>
+            <div className={styles.button}>
+              <Link href="#section2">F</Link>
+            </div>
+            <div className={styles.button2}>
+              <Link href="#section2">F</Link>
+            </div>
+          </div>
+          <div className={styles.container}>
+            <p>&quot;A la esperanza, aniquiladora de todo pesimismo&quot;</p>
+            <Link href="#section2">Abrazos para una nariz sin olfato</Link>
+          </div>
         </div>
       </section>
       <section id="section1" className={styles.sectionMini1}>
@@ -39,7 +49,11 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
           height={550}
         />
         <div className={styles.maquinaDeEscribir}>
-          <p>&quot;A la esperanza, <br />aniquiladora de todo <br />pesimismo&quot;</p>
+          <p>
+            &quot;A la esperanza, <br />
+            aniquiladora de todo <br />
+            pesimismo&quot;
+          </p>
         </div>
       </section>
       <section id="section2" className={styles.section2}>

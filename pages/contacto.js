@@ -29,11 +29,11 @@ const Contacto = ({ scrollUpFunction, styleScrollUp, styleBurger }) => {
                     height={700}
                     objectFit="contain"
                 />
-                {/*<div className={styles.text_s1}>
-                    <h1>Blog personal</h1>
+                <div className={styles.text_s1}>
+                    {/*<h1>Blog personal</h1>
                     <p>
                     En construcción
-                    </p>
+    </p>*/}
                     <Link href="#footer" className={styles.buttontest} >
                         <div className={styles.buttonS1}>
                             <div className={styles.svgWrapper1}>
@@ -47,7 +47,7 @@ const Contacto = ({ scrollUpFunction, styleScrollUp, styleBurger }) => {
                             <span>Blog</span>
                         </div>
                     </Link>
-    </div>*/}
+    </div>
             </section>
             <ScrollUp
                 scrollUpFunction={scrollUpFunction}

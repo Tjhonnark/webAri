@@ -35,6 +35,7 @@ export default function App() {
       >
         <SwiperSlide className={styles.SwiperSlide}>
           <img className={styles.img} src="/Foto1b.jpg" alt="" />
+          Horizontal Slide 1
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
           <img
@@ -53,25 +54,13 @@ export default function App() {
           />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img
-            className={styles.img}
-            src="/Foto4.jpg"
-            alt=""
-          />
+          <img className={styles.img} src="/Foto4.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img
-            className={styles.img}
-            src="/Foto5b.jpg"
-            alt=""
-          />
+          <img className={styles.img} src="/Foto5b.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img
-            className={styles.img}
-            src="/Foto6b.jpg"
-            alt=""
-          />
+          <img className={styles.img} src="/Foto6b.jpg" alt="" />
         </SwiperSlide>
       </Swiper>
     </>

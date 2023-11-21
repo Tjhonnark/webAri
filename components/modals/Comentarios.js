@@ -27,7 +27,7 @@ export default function Comentarios({
       >
         <div className={styles.container}>
           <div className={styles.title_container}>
-            <h2>"</h2>
+            <h2>""</h2>
             <button onClick={modalClose}>
               <i className="bi bi-x-circle-fill"></i>
             </button>

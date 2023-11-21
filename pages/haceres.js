@@ -20,7 +20,9 @@ export default function Haceres({
   const [comentario2, setComentario2] = useState(false);
   const [comentario3, setComentario3] = useState(false);
   const [comentario4, setComentario4] = useState(false);
-  const [comentario5, setComentario5] = useState(false);
+  const [comentario21, setComentario21] = useState(false);
+  const [comentario31, setComentario31] = useState(false);
+  const [comentario32, setComentario32] = useState(false);
 
   // Cart
   const cart = () => {
@@ -39,8 +41,14 @@ export default function Haceres({
   const cart4 = () => {
     setComentario4(!comentario4);
   };
-  const cart5 = () => {
-    setComentario5(!comentario5);
+  const cart21 = () => {
+    setComentario21(!comentario21);
+  };
+  const cart31 = () => {
+    setComentario31(!comentario31);
+  };
+  const cart32 = () => {
+    setComentario32(!comentario32);
   };
 
   return (
@@ -118,46 +126,32 @@ export default function Haceres({
         <div className={styles.container}>
           <div className={styles.comentarios}>
             <Comentarios
-              modalForm={comentario}
-              setModalForm={setComentario}
-              comentario="“La voz poética bethancourtiana cobra aquí otras formas y matices, experimentado con formatos más extensos y nuevas temáticas”."
-              people="Leonel Alvarado"
-              more="Poeta y académico (Honduras/Nueva Zelanda)."
-            />
-            <button className={styles.comentario} onClick={cart}>
-              Leonel Alvarado
-            </button>
-            <Comentarios
-              modalForm={comentario2}
-              setModalForm={setComentario2}
-              comentario="“Título sugestivo y kinestésico, encerrado en paréntesis. Territorio de asombro que desvela lo inusual. Poeta de fino palpar, y me refiero a esa epidermis del lenguaje suave, melodioso a veces, sin embargo, el poema no se da de manera fácil, ningún auténtico poema lo es. Aguza los sentidos para tomar el escarpelo e insertarlo en la interioridad del poema. Usa versos de arte menor y poemas breves. No hay desmesura, más bien, concentración. Esto me agrada ante el palabrerío insustancial de muchos poetas.”"
-              people="Víctor Bidó Ensayista"
-              more="Poeta y pintor (Rep. Dominicana)."
-            />
-            <button className={styles.comentario2} onClick={cart2}>
-              Víctor Bidó Ensayista
-            </button>
-            <Comentarios
-              modalForm={comentario3}
-              setModalForm={setComentario3}
-              comentario="“Trabajo de largo aliento, obra pulida, esculpe con ironía y humor pasajes infinitamente humanos, en lo que entendemos es un poemario para tallar el retorno. La dedicatoria “A la esperanza, aniquiladora de todo pesimismo” sella esa persistencia inquebrantable, gesto a partir del cual se inicia el repertorio de movimientos de la palabra como materia prima. De versos cincelados, sus herramientas de trabajo son abrazos: 16 secciones de abrazos con cifras aleatorias, 4 sin cifra y una sección de abrazos excedentes. El libro es también un viaje des-localizado de tierra alguna, viaje hacia una morada sin paradero fijo, cuyas diferentes citas e idiomas revelan una trayectoria de abrazos itinerantes, casi desarraigados. No obstante, a través de ellos la morada interior prevalece como casa-territorio, como escenario de lo propio; allí, la memoria deja su huella, su talla imborrable porque el itinerario vuelve siempre a la intimidad del abrazo.”"
+              modalForm={comentario21}
+              setModalForm={setComentario21}
+              comentario="“Trabajo experimental de poesía sonora que busca dejar atrás la simple musicalización de poemas en pos de un verdadero dialogo creativo entre dos disciplinas artísticas: la composición musical y la composición poética, tal como lo dice Bethancourt en el epígrafe de la caratula: porque la conversación y sus alteraciones son un atributo más de lo poético y lo musical. Realizado en conjunto con la Maestra Electra Castillo, compositora e instrumentista, el mismo consta de piezas cortas, para oboe, cuerdas y piano, concebidas a manera de ensayo sinfónico en respuesta al poemario, mientras la voz de la poeta da vida a los poemas. Se llevó a cabo una presentación del libro y un concierto preliminar en la antigua Exedra Books, en 2012.”"
               people="Eyra Harbar"
-              more="Poeta y abogada (Panamá)."
+              more="Escritora y abogada (Panamá)."
             />
-            <button className={styles.comentario3} onClick={cart3}>
+            <button className={styles.comentario} onClick={cart21}>
               Eyra Harbar
             </button>
-            <Comentarios
-              modalForm={comentario4}
-              setModalForm={setComentario4}
-              comentario="“La voz de Abrazos de una nariz sin olfato persigue imágenes, las elige cuidadosamente y las ofrece, luego de una reflexión poética, depuradas, casi como instantáneas pictóricas (…) Y muchas de estas imágenes son descarnadas, cosa que no deja indiferente al lector.”"
-              people="Sonia Fernández Hoyos"
-              more="Académica y crítica literaria (Francia)."
-            />
-            <button className={styles.comentario4} onClick={cart4}>
-              Sonia Fernández Hoyos
-            </button>
           </div>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/foto2.jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>
+              Opus sostenido. Alegoría musical para Abrazos de una nariz sin
+              olfato
+            </h3>
+          </div>
+        </div>
+        <div className={styles.container}>
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
@@ -168,6 +162,28 @@ export default function Haceres({
               priority
             />
             <h3>Patrimonio intangible (poesía, 2018)</h3>
+          </div>
+          <div className={styles.comentarios}>
+            <Comentarios
+              modalForm={comentario31}
+              setModalForm={setComentario31}
+              comentario="“La voz poética bethancourtiana cobra aquí otras formas y matices, experimentado con formatos más extensos y nuevas temáticas.”"
+              people="Joan A. Martí"
+              more="Filólogo (España)."
+            />
+            <button className={styles.comentario} onClick={cart31}>
+              Joan A. Martí
+            </button>
+            <Comentarios
+              modalForm={comentario32}
+              setModalForm={setComentario32}
+              comentario="“Título sugestivo y kinestésico, encerrado en paréntesis. Territorio de asombro que desvela lo inusual. Poeta de fino palpar, y me refiero a esa epidermis del lenguaje suave, melodioso a veces, sin embargo, el poema no se da de manera fácil, ningún auténtico poema lo es. Aguza los sentidos para tomar el escarpelo e insertarlo en la interioridad del poema. Usa versos de arte menor y poemas breves. No hay desmesura, más bien, concentración. Esto me agrada ante el palabrerío insustancial de muchos poetas.”"
+              people="Víctor Bidó Ensayista"
+              more="Poeta y pintor (Rep. Dominicana)."
+            />
+            <button className={styles.comentario2} onClick={cart32}>
+              Víctor Bidó Ensayista
+            </button>
           </div>
         </div>
       </section>
@@ -297,10 +313,19 @@ export default function Haceres({
             />
             <h3>Música y poesía</h3>
             <p>
-              Ensayo de poesía sonora: <i><strong>Opus Sostenido. Alegoría musical para
-              Abrazos de una nariz sin olfato.</strong></i> Tino Castro Estudio, 2014. <br />
+              Ensayo de poesía sonora:{" "}
+              <i>
+                <strong>
+                  Opus Sostenido. Alegoría musical para Abrazos de una nariz sin
+                  olfato.
+                </strong>
+              </i>{" "}
+              Tino Castro Estudio, 2014. <br />
               Dialogo entre música y poesía:
-              <strong><i> CantArte POrÉtica,</i> </strong> Sanbors, Multiplaza, Panamá 2014.
+              <strong>
+                <i> CantArte POrÉtica,</i>{" "}
+              </strong>{" "}
+              Sanbors, Multiplaza, Panamá 2014.
             </p>
             <Link
               href="https://www.youtube.com/watch?v=JNnpk9lMkNM"
