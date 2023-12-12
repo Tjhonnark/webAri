@@ -32,7 +32,7 @@ export default function TallerCultura({
         <div className={styles.text}>
           <h1>Taller Cultura</h1>
           <p>
-            Taller Cultura es una asociación fundada en 2013 para la promoción
+            <strong><i>Taller Cultura es una asociación fundada en 2013</i></strong> para la promoción
             de la cultura, las ciencias sociales y humanísticas, con un interés
             especial en entrelazar las áreas de literatura, medioambiente y
             sociedad. Buscamos generar iniciativas que contribuyan de manera
@@ -48,8 +48,8 @@ export default function TallerCultura({
             Entre nuestras principales actividades se cuenta la promoción de la
             lectura y la literatura. Queremos que la literatura sea hermana del
             quehacer diario, ya como lectores o como escritores, y para tal
-            propósito venimos realizando desde 2014 charlas, conversatorios y
-            recitales que incentiven al público, en especial a los jóvenes, a
+            propósito <strong><i>venimos realizando desde 2014 charlas, conversatorios y
+            recitales</i></strong> que incentiven al público, en especial a los jóvenes, a
             acercarse a autores panameños e internacionales.
           </p>
         </div>
@@ -57,8 +57,8 @@ export default function TallerCultura({
       <section id="section2" className={styles.section2}>
         <div className={styles.text2}>
           <p>
-            Como creadores de contenido a partir de 2019 establecimos la
-            división Taller Cultura Publicaciones, ofreciendo servicios y sello
+            Como creadores de contenido <strong><i>a partir de 2019 establecimos la
+            división Taller Cultura Publicaciones</i></strong>, ofreciendo servicios y sello
             editorial no lucrativo para el acompañamiento de escritores.
             Igualmente, ofrecemos asesorías privadas, lingüístico-literarias,
             sobre género y cultura, entre otros, en un nutrido intercambio de
@@ -66,8 +66,8 @@ export default function TallerCultura({
             información documentada.
             <br />
             <br />
-            En la línea de nuestro interés por la juventud, en 2022 debutó El
-            Programa NEA, que en griego significa nuevo y joven. Este es un
+            En la línea de nuestro interés por la juventud, <strong><i>en 2022 debutó El
+            Programa NEA</i></strong>, que en griego significa nuevo y joven. Este es un
             programa de capacitación y mentoría en emprendimiento y vida
             ciudadana, con enfoque intergeneracional, que apoya a jóvenes ávidos
             de arrancar en una sociedad difícil como la nuestra. Nos interesa
@@ -76,9 +76,9 @@ export default function TallerCultura({
             generaciones.
             <br />
             <br />
-            Nuestra próxima aventura: nuestra página web, pronto....!! De
+            Nuestra próxima aventura: ¡nuestra página web, pronto....! De
             momento, nos pueden contactar a través de nuestras redes sociales y
-            correo: Taller Cultura: @fundaciontallercultura |
+            correo: @fundaciontallercultura |
             fundaciontallercultura@gmail.com
           </p>
         </div>
