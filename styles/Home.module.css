@@ -29,7 +29,7 @@
 .text1_a1_s1 {
   color: rgb(255, 255, 255);
   width: 50%;
-  margin-top: 8rem;
+  margin-top: 0rem;
   text-align: center;
   position: absolute;
   display: flex;
@@ -40,15 +40,27 @@
 }
 
 .button {
-  position: static;
-  margin-top: -10.7rem;
-  margin-left: -74.5rem;
+  position: absolute;
+  top: 0.7rem;
+  margin-left: -40.3rem;
 }
 
 .button2 {
-  position: static;
-  margin-top: -5.3rem;
-  margin-right: -73rem;
+  position: relative;
+  top: 0.8rem;
+  margin-right: -75.6rem;
+}
+
+.button3 {
+  position: relative;
+  top: 13.5rem;
+  margin-right: -73.2rem;
+}
+
+.button4 {
+  position: relative;
+  top: 9rem;
+  margin-left: -63.9rem;
 }
 
 .buttons a {
@@ -60,7 +72,8 @@
 }
 
 .buttons a:hover {
-  color: #000;
+  color: #fff;
+  background-color: #00000062;
   transform: translateY(-7px);
 }
 

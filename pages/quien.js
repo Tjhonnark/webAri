@@ -56,6 +56,39 @@ export default function Quien({
         </div>
       </section>
       <section id="section2" className={styles.section2}>
+        <h3>Línea de tiempo</h3>
+        <div className={styles.timelapse}>
+          <div className={styles.date}>
+            <p>2023</p>
+            <p>2023</p>
+            <p>2023</p>
+            <p>2023</p>
+            <p>2023</p>
+            <p>2023</p>
+            <p>2023</p>
+            <p>2023</p>
+            <p>2023</p>
+          </div>
+          <div className={styles.buttons}>
+            <a href="/trayectoria/#evento1">.</a>
+            <div className={styles.line}></div>
+            <a href="">.</a>
+            <div className={styles.line}></div>
+            <a href="">.</a>
+            <div className={styles.line}></div>
+            <a href="">.</a>
+            <div className={styles.line}></div>
+            <a href="">.</a>
+            <div className={styles.line}></div>
+            <a href="">.</a>
+            <div className={styles.line}></div>
+            <a href="">.</a>
+            <div className={styles.line}></div>
+            <a href="">.</a>
+            <div className={styles.line}></div>
+            <a href="">.</a>
+          </div>
+        </div>
         <div className={styles.title}>
           <h3>Nota biográfica</h3>
           <h2>
@@ -127,4 +160,3 @@ export default function Quien({
     </div>
   );
 }
-

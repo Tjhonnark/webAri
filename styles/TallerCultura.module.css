@@ -1,8 +1,7 @@
 .body {
   background-image: linear-gradient(45deg, #acacac 0%, #ffffff 100%);
-  }
-  /* Section main */
-
+}
+/* Section main */
 .sectionMain {
   width: 100%;
   padding: 6rem 6rem 6rem 6rem;
@@ -16,8 +15,8 @@
 }
 
 .text {
-  width: 30rem;
-  text-align: end;
+  width: 40rem;
+  text-align: start;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -34,6 +33,39 @@
 }
 
 .text button {
-    color: #000;
+  color: #000;
   font-size: 2rem;
+}
+
+/* SECTION 2 */
+.section2 {
+  width: 100%;
+  padding: 2rem 6rem 6rem 6rem;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrusel2 {
+  width: 30rem;
+  height: 30rem;
+}
+
+.text2 {
+  width: 40rem;
+  text-align: start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.text2 h1 {
+  width: 100%;
+  font-size: 4rem;
+}
+
+.text2 p {
+  width: 100%;
 }

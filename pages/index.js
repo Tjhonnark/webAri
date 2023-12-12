@@ -33,6 +33,12 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
             <div className={styles.button2}>
               <Link href="#section2">F</Link>
             </div>
+            <div className={styles.button3}>
+              <Link href="#section2">F</Link>
+            </div>
+            <div className={styles.button4}>
+              <Link href="#section2">F</Link>
+            </div>
           </div>
           <div className={styles.container}>
             <p>&quot;A la esperanza, aniquiladora de todo pesimismo&quot;</p>

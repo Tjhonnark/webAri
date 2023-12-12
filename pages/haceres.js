@@ -23,6 +23,9 @@ export default function Haceres({
   const [comentario21, setComentario21] = useState(false);
   const [comentario31, setComentario31] = useState(false);
   const [comentario32, setComentario32] = useState(false);
+  const [comentario41, setComentario41] = useState(false);
+  const [comentario51, setComentario51] = useState(false);
+  const [comentario52, setComentario52] = useState(false);
 
   // Cart
   const cart = () => {
@@ -49,6 +52,15 @@ export default function Haceres({
   };
   const cart32 = () => {
     setComentario32(!comentario32);
+  };
+  const cart41 = () => {
+    setComentario41(!comentario41);
+  };
+  const cart51 = () => {
+    setComentario51(!comentario51);
+  };
+  const cart52 = () => {
+    setComentario52(!comentario52);
   };
 
   return (
@@ -186,159 +198,199 @@ export default function Haceres({
             </button>
           </div>
         </div>
+        <div className={styles.container}>
+          <div className={styles.comentarios}>
+            <Comentarios
+              modalForm={comentario41}
+              setModalForm={setComentario41}
+              comentario="“Es un yo lírico tenaz, recio, fuerte, armado con la ironía. Sus poemas son también canciones con letra y música para que tengan todos los lenguajes del Horus. Visual, auditivo, kinésico para aumentar su poder de movilización emocional.”"
+              people="Rafael Ruiloba"
+              more="Catedrático y escritor (Panamá)."
+            />
+            <button className={styles.comentario} onClick={cart41}>
+              Rafael Ruiloba
+            </button>
+          </div>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/afrodita.jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>
+              La nueva canción de Afrodita. Estudio y antología de poesía
+              posmoderna de mujeres en Panamá
+            </h3>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/nunezdebalboa.png"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>Vasco Núñez de Balboa y la geopsiquis de una nación</h3>
+          </div>
+          <div className={styles.comentarios}>
+            <Comentarios
+              modalForm={comentario51}
+              setModalForm={setComentario51}
+              comentario="“Considero que este ensayo es un trabajo completo que analiza la relación de la crónica y la ficción en la novela de Méndez Pereira.”"
+              people="Luis Pulido Ritter"
+              more="Ensayista y académico (Panamá)"
+            />
+            <button className={styles.comentario} onClick={cart51}>
+              Luis Pulido Ritter
+            </button>
+            <Comentarios
+              modalForm={comentario52}
+              setModalForm={setComentario52}
+              comentario="“Balboa, así, se convierte en “el signo proliferado de lo auténticamente panameño” como bien destaca García Rodríguez en su seminal artículo, […] pues “la figura del conquistador asume su papel de símbolo de lo nacional en la medida en que el mismo representa el ‘inicio’ del país a nivel histórico-geográfico.”"
+              people="Carlos Fitzgerald"
+              more="Arqueólogo y antropólogo (Panamá)"
+            />
+            <button className={styles.comentario2} onClick={cart52}>
+              Carlos Fitzgerald
+            </button>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.comentarios}>
+            <p>
+              La página en blanco de lo tropical: la literatura latinoamericana
+              en Francia y Estados Unidos, ensayo didáctico-cultural en
+              Enseignement et recherche sur l’art et la littérature d’Amérique
+              Latine en France, Actes del Coloquio Internacional, Universidad de
+              Metz, Francia, 2003, pp. 147-162.
+            </p>
+          </div>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/laPaginaEnBlanco.jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>
+              La página en blanco de lo tropical: la literatura latinoamericana
+              en Francia y Estados Unidos
+            </h3>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/xibalba.jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>Por un pétrea crónica de agua: estudio introductorio</h3>
+          </div>
+          <div className={styles.comentarios}>
+            <p>
+              Por un pétrea crónica de agua: estudio introductorio, estudio
+              introductorio sobre el poemario Xibalbá: Texas de Leonel Alvarado,
+              Colección Premio Centroamericano Rogelio Sinán, Universidad
+              Tecnológica de Panamá, 2014, pp. 5-13.
+            </p>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.comentarios}>
+            <p>
+              trabajo colaborativo junto a Liriola Leoteau y Eyra Harbar.
+              Participación en la creación y redacción. Responsable de la
+              edición, corrección y diseño, Panamá, 2016.
+            </p>
+          </div>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/memoria.jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>Memoria Institucional 2015 del INAMU</h3>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/laEscritura.jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>Paisaje y desarraigo en la escritura jaramilloleviana</h3>
+          </div>
+          <div className={styles.comentarios}>
+            <p>
+              Paisaje y desarraigo en la escritura jaramilloleviana, estudio
+              sobre la obra del escritor Enrique Jaramillo Levi en Habitar la
+              escritura. -De `Duplicaciones´ (1973) a ´Inmersiones` (2019)-
+              Indagaciones sobre la obra literaria de Enrique Jaramillo Levi,
+              Foro/Taller Sagitario Ediciones, Panamá, 2019, pp. 17-51.
+            </p>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.comentarios}>
+            <p>
+              Para una noche que comienza, prólogo, edición y corrección del
+              libro de cuentos La noche de los cocuyos de Danae Brugiati, Taller
+              cultura publicaciones, Panamá, 2019, pp. 11-17.
+            </p>
+          </div>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/laNocheDeLosCocuyos.jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>Para una noche que comienza</h3>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/Realidad.jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>Canto de cenizas sobre el agua</h3>
+          </div>
+          <div className={styles.comentarios}>
+            <p>
+              Canto de cenizas sobre el agua, artículo-reseña del poemario
+              `Managua 38o´ de Marta Leonor González (Nicaragua) en Realidad:
+              Revista de Ciencias Sociales y Humanidades (156): 2021, pp.
+              247-253.
+            </p>
+          </div>
+        </div>
       </section>
-      <section className={styles.trayectoria}>
-        <h2>Trayectoria</h2>
-        <div className={styles.row1}>
-          <div className={styles.evento1}>
-            <Image
-              className={styles.imgEvento1}
-              src="/example.jpg"
-              alt="Ariadna Garcia"
-              width={320}
-              height={300}
-              priority
-            />
-            <p>00/00/0000</p>
-            <h3>Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              dolore in non veritatis dolores autem pariatur, cupiditate odio
-              sapiente deleniti maxime placeat cum nobis corporis facere ipsa
-              voluptas iste eaque.
-            </p>
-            <button className={styles.button}>Link</button>
-          </div>
-          <div className={styles.evento2}>
-            <Image
-              className={styles.imgEvento2}
-              src="/example.jpg"
-              alt="Ariadna Garcia"
-              width={320}
-              height={400}
-              priority
-            />
-            <div className={styles.textEvento2}>
-              <p>00/00/0000</p>
-              <h3>Title</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                dolore in non veritatis dolores autem pariatur, cupiditate odio
-                sapiente deleniti maxime placeat cum nobis corporis facere ipsa
-                voluptas iste eaque.
-              </p>
-              <button className={styles.button}>Link</button>
-            </div>
-          </div>
-        </div>
-        <div className={styles.row2}>
-          <div className={styles.evento1}>
-            <Image
-              className={styles.imgEvento1}
-              src="/example.jpg"
-              alt="Ariadna Garcia"
-              width={320}
-              height={300}
-              priority
-            />
-            <p>00/00/0000</p>
-            <h3>Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              dolore in non veritatis dolores autem pariatur, cupiditate odio
-              sapiente deleniti maxime placeat cum nobis corporis facere ipsa
-              voluptas iste eaque.
-            </p>
-            <button className={styles.button}>Link</button>
-          </div>
-          <div className={styles.evento2}>
-            <Image
-              className={styles.imgEvento1}
-              src="/example.jpg"
-              alt="Ariadna Garcia"
-              width={320}
-              height={300}
-              priority
-            />
-            <p>00/00/0000</p>
-            <h3>Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              dolore in non veritatis dolores autem pariatur, cupiditate odio
-              sapiente deleniti maxime placeat cum nobis corporis facere ipsa
-              voluptas iste eaque.
-            </p>
-            <button className={styles.button}>Link</button>
-          </div>
-          <div className={styles.evento3}>
-            <Image
-              className={styles.imgEvento1}
-              src="/example.jpg"
-              alt="Ariadna Garcia"
-              width={320}
-              height={300}
-              priority
-            />
-            <p>00/00/0000</p>
-            <h3>Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              dolore in non veritatis dolores autem pariatur, cupiditate odio
-              sapiente deleniti maxime placeat cum nobis corporis facere ipsa
-              voluptas iste eaque.
-            </p>
-            <button className={styles.button}>Link</button>
-          </div>
-        </div>
-        <div className={styles.row3}>
-          <div className={styles.evento1}>
-            <Carrusel />
-            <p>
-              <i>
-                Porque la conversación y sus alteraciones son un atributo más de
-                lo poético y lo musical.
-                <br />
-              </i>{" "}
-              <strong>BBP Bethancourt, 2014</strong>
-            </p>
-          </div>
-          <div className={styles.evento2}>
-            <Image
-              className={styles.imgEvento1}
-              src="/Foto2b.jpg"
-              alt="Ariadna Garcia"
-              width={320}
-              height={300}
-              priority
-            />
-            <h3>Música y poesía</h3>
-            <p>
-              Ensayo de poesía sonora:{" "}
-              <i>
-                <strong>
-                  Opus Sostenido. Alegoría musical para Abrazos de una nariz sin
-                  olfato.
-                </strong>
-              </i>{" "}
-              Tino Castro Estudio, 2014. <br />
-              Dialogo entre música y poesía:
-              <strong>
-                <i> CantArte POrÉtica,</i>{" "}
-              </strong>{" "}
-              Sanbors, Multiplaza, Panamá 2014.
-            </p>
-            <Link
-              href="https://www.youtube.com/watch?v=JNnpk9lMkNM"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.button}
-            >
-              CantARTE POrETICA / Ronda 2-8
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <ScrollUp
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}
