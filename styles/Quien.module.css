@@ -121,7 +121,7 @@
 
 .date {
   position: absolute;
-  left: 24.2rem;
+  left: 20.9rem;
   margin: -1.5rem 0 0 0;
   display: flex;
   flex-flow: row wrap;
@@ -131,7 +131,7 @@
 
 .date p {
   margin: 0 0 0 0;
-  padding: 0 2.1rem 0 0.5rem;
+  padding: 0 2.5rem 0 0.5rem;
 }
 
 .buttons {
@@ -153,7 +153,7 @@
 
 .line {
   background-color: red;
-  width: 3rem;
+  width: 4rem;
   height: 0.2rem;
 }
 
