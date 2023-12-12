@@ -34,40 +34,94 @@ export default function App() {
         className={styles.swiper}
       >
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup1.jpg" alt="" />
-          Horizontal Slide 1
-        </SwiperSlide>
-        <SwiperSlide className={styles.SwiperSlide}>
-          <img
+          <Image
             className={styles.img}
-            src="/NeaGroup2.jpg"
+            src="/NeaGroup1.jpg"
             alt=""
-            objectFit="contain"
+            width={500}
+            height={500}
           />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup3.jpg" alt="" objectFit="contain"/>
+          <Image
+            className={styles.img}
+            src="/NeaGroup2.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup4.jpg" alt="" objectFit="contain"/>
+          <Image
+            className={styles.img}
+            src="/NeaGroup3.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup5.jpg" alt="" />
+          <Image
+            className={styles.img}
+            src="/NeaGroup4.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup6.jpg" alt="" />
+          <Image
+            className={styles.img}
+            src="/NeaGroup5.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup7.jpg" alt="" />
+          <Image
+            className={styles.img}
+            src="/NeaGroup6.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup8.jpg" alt="" />
+          <Image
+            className={styles.img}
+            src="/NeaGroup7.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup9.jpg" alt="" />
+          <Image
+            className={styles.img}
+            src="/NeaGroup8.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/NeaGroup10.jpg" alt="" />
+          <Image
+            className={styles.img}
+            src="/NeaGroup9.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles.SwiperSlide}>
+          <Image
+            className={styles.img}
+            src="/NeaGroup10.jpg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </SwiperSlide>
       </Swiper>
     </>

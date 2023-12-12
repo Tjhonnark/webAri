@@ -59,34 +59,54 @@ export default function Quien({
         <h3>Línea de tiempo</h3>
         <div className={styles.timelapse}>
           <div className={styles.date}>
-            <p>2023</p>
-            <p>2023</p>
-            <p>2023</p>
-            <p>2023</p>
-            <p>2023</p>
-            <p>2023</p>
-            <p>2023</p>
-            <p>2023</p>
-            <p>2023</p>
+            <p>
+              2023&emsp;&emsp;&emsp;&emsp;
+              2023&emsp;&emsp;&emsp;
+              2023&emsp;&emsp;&emsp;&emsp;
+              2023&emsp;&emsp;&emsp;&emsp;
+              2023&emsp;&emsp;&emsp;&emsp;
+              2023&emsp;&emsp;&emsp;&emsp;
+              2023&emsp;&emsp;&emsp;&emsp;
+              2023&emsp;&emsp;&emsp;&emsp;
+              2023&emsp;&emsp;&emsp;
+            </p>
           </div>
           <div className={styles.buttons}>
-            <a href="/trayectoria/#evento1">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
             <div className={styles.line}></div>
-            <a href="">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
             <div className={styles.line}></div>
-            <a href="">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
             <div className={styles.line}></div>
-            <a href="">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
             <div className={styles.line}></div>
-            <a href="">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
             <div className={styles.line}></div>
-            <a href="">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
             <div className={styles.line}></div>
-            <a href="">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
             <div className={styles.line}></div>
-            <a href="">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
             <div className={styles.line}></div>
-            <a href="">.</a>
+            <Link className={styles.link} href="">
+              .
+            </Link>
           </div>
         </div>
         <div className={styles.title}>

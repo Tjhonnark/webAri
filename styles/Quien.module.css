@@ -141,7 +141,7 @@
   align-items: center;
 }
 
-.buttons a {
+.link {
   background-color: red;
   color: #DADADA;
   text-decoration: none;

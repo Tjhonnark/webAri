@@ -34,33 +34,22 @@ export default function App() {
         className={styles.swiper}
       >
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/Foto1b.jpg" alt="" />
-          Horizontal Slide 1
+          <Image className={styles.img} src="/Foto1b.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img
-            className={styles.img}
-            src="/Foto2b.jpg"
-            alt=""
-            objectFit="contain"
-          />
+          <Image className={styles.img} src="/Foto2b.jpg"alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img
-            className={styles.img}
-            src="/Foto3b.jpg"
-            alt=""
-            objectFit="contain"
-          />
+          <Image className={styles.img} src="/Foto3b.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/Foto4.jpg" alt="" />
+          <Image className={styles.img} src="/Foto4.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/Foto5b.jpg" alt="" />
+          <Image className={styles.img} src="/Foto5b.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <img className={styles.img} src="/Foto6b.jpg" alt="" />
+          <Image className={styles.img} src="/Foto6b.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
       </Swiper>
     </>

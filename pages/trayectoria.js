@@ -27,7 +27,7 @@ export default function Trayectoria({
           height={550}
         />
         <div className={styles.text1_a1_s1}>
-          <h2>Trayectoria</h2>
+          <h2>En construcción</h2>
         </div>
       </section>
       {/* 
