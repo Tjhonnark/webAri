@@ -201,10 +201,10 @@ export default function Haceres({
         <div className={styles.container}>
           <div className={styles.comentarios}>
             <p>
-              "Panamá siempre ha estado pendiente de una asignatura. Desde el
+            &quot;Panamá siempre ha estado pendiente de una asignatura. Desde el
               siglo XVII, fecha en la que se encuentran los primeros poemas de
               poetas panameños reunidos en la Antología poética “Llanto de
-              Panamá a la muerte de Enrique Enríquez" (Madrid 1638), hasta estos
+              Panamá a la muerte de Enrique Enríquez&quot; (Madrid 1638), hasta estos
               tiempos modernos de usbs y poemas interactivos ha corrido mucha
               agua de canal bajo el puente. Panamá es poesía por todos lados. No
               sólo es el Canal o su clima tropical, sus playas caribeñas o su
