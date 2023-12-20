@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 import ScrollUp from "../components/ScrollUp";
 import Burger from "../components/Burger";
 import Comentarios from "../components/modals/Comentarios";
-import Carrusel from "../components/Carrusel";
 /* STYLES */
 import styles from "../styles/Haceres.module.css";
 
@@ -78,7 +77,7 @@ export default function Haceres({
           <h2>En construcción</h2>
         </div>
       </section>
-      {/* 
+
       <section className={styles.publicaciones}>
         <h2>Publicaciones</h2>
         <div className={styles.container}>
@@ -190,28 +189,49 @@ export default function Haceres({
             <Comentarios
               modalForm={comentario32}
               setModalForm={setComentario32}
-              comentario="“Título sugestivo y kinestésico, encerrado en paréntesis. Territorio de asombro que desvela lo inusual. Poeta de fino palpar, y me refiero a esa epidermis del lenguaje suave, melodioso a veces, sin embargo, el poema no se da de manera fácil, ningún auténtico poema lo es. Aguza los sentidos para tomar el escarpelo e insertarlo en la interioridad del poema. Usa versos de arte menor y poemas breves. No hay desmesura, más bien, concentración. Esto me agrada ante el palabrerío insustancial de muchos poetas.”"
-              people="Víctor Bidó Ensayista"
-              more="Poeta y pintor (Rep. Dominicana)."
+              comentario="“Poeta en la que vemos oficio, con estilo y lenguaje propio.”"
+              people="Sebastián Realini"
+              more="Poeta y editor (Argentina)"
             />
             <button className={styles.comentario2} onClick={cart32}>
-              Víctor Bidó Ensayista
+            Sebastián Realini
             </button>
           </div>
         </div>
         <div className={styles.container}>
           <div className={styles.comentarios}>
-            <Comentarios
-              modalForm={comentario41}
-              setModalForm={setComentario41}
-              comentario="“Es un yo lírico tenaz, recio, fuerte, armado con la ironía. Sus poemas son también canciones con letra y música para que tengan todos los lenguajes del Horus. Visual, auditivo, kinésico para aumentar su poder de movilización emocional.”"
-              people="Rafael Ruiloba"
-              more="Catedrático y escritor (Panamá)."
-            />
-            <button className={styles.comentario} onClick={cart41}>
-              Rafael Ruiloba
-            </button>
+            <p>
+              "Panamá siempre ha estado pendiente de una asignatura. Desde el
+              siglo XVII, fecha en la que se encuentran los primeros poemas de
+              poetas panameños reunidos en la Antología poética “Llanto de
+              Panamá a la muerte de Enrique Enríquez" (Madrid 1638), hasta estos
+              tiempos modernos de usbs y poemas interactivos ha corrido mucha
+              agua de canal bajo el puente. Panamá es poesía por todos lados. No
+              sólo es el Canal o su clima tropical, sus playas caribeñas o su
+              selva exótica y hermosa, sino, creo yo, su mayor potencial y
+              atractivo está en su gente, y sobre todo en aquella gente que
+              escribe poesía y rediseña toda el alma de los panameños modernos.
+              Gente de proyección que ahora desea aprobar esa asignatura
+              pendiente con su propia herencia cultural. Desea rescatar desde
+              las profundidades de su diversidad las voces de esos poetas
+              indígenas, hispánicos y afroamericanos”.
+            </p>
           </div>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/unnamed (1).jpg"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>
+              La palabra provocada <br /> Antología Poética Panameña
+            </h3>
+          </div>
+        </div>
+        <div className={styles.container}>
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
@@ -226,19 +246,20 @@ export default function Haceres({
               posmoderna de mujeres en Panamá
             </h3>
           </div>
+          <div className={styles.comentarios}>
+            <Comentarios
+              modalForm={comentario41}
+              setModalForm={setComentario41}
+              comentario="“Es un yo lírico tenaz, recio, fuerte, armado con la ironía. Sus poemas son también canciones con letra y música para que tengan todos los lenguajes del Horus. Visual, auditivo, kinésico para aumentar su poder de movilización emocional.”"
+              people="Rafael Ruiloba"
+              more="Catedrático y escritor (Panamá)."
+            />
+            <button className={styles.comentario} onClick={cart41}>
+              Rafael Ruiloba
+            </button>
+          </div>
         </div>
         <div className={styles.container}>
-          <div className={styles.libro1}>
-            <Image
-              className={styles.libro1img}
-              src="/nunezdebalboa.png"
-              alt="Ariadna Garcia"
-              width={300}
-              height={370}
-              priority
-            />
-            <h3>Vasco Núñez de Balboa y la geopsiquis de una nación</h3>
-          </div>
           <div className={styles.comentarios}>
             <Comentarios
               modalForm={comentario51}
@@ -261,17 +282,19 @@ export default function Haceres({
               Carlos Fitzgerald
             </button>
           </div>
+          <div className={styles.libro1}>
+            <Image
+              className={styles.libro1img}
+              src="/nunezdebalboa.png"
+              alt="Ariadna Garcia"
+              width={300}
+              height={370}
+              priority
+            />
+            <h3>Vasco Núñez de Balboa y la geopsiquis de una nación</h3>
+          </div>
         </div>
         <div className={styles.container}>
-          <div className={styles.comentarios}>
-            <p>
-              La página en blanco de lo tropical: la literatura latinoamericana
-              en Francia y Estados Unidos, ensayo didáctico-cultural en
-              Enseignement et recherche sur l’art et la littérature d’Amérique
-              Latine en France, Actes del Coloquio Internacional, Universidad de
-              Metz, Francia, 2003, pp. 147-162.
-            </p>
-          </div>
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
@@ -286,8 +309,25 @@ export default function Haceres({
               en Francia y Estados Unidos
             </h3>
           </div>
+          <div className={styles.comentarios}>
+            <p>
+              La página en blanco de lo tropical: la literatura latinoamericana
+              en Francia y Estados Unidos, ensayo didáctico-cultural en
+              Enseignement et recherche sur l’art et la littérature d’Amérique
+              Latine en France, Actes del Coloquio Internacional, Universidad de
+              Metz, Francia, 2003, pp. 147-162.
+            </p>
+          </div>
         </div>
         <div className={styles.container}>
+          <div className={styles.comentarios}>
+            <p>
+              Por un pétrea crónica de agua: estudio introductorio, estudio
+              introductorio sobre el poemario Xibalbá: Texas de Leonel Alvarado,
+              Colección Premio Centroamericano Rogelio Sinán, Universidad
+              Tecnológica de Panamá, 2014, pp. 5-13.
+            </p>
+          </div>
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
@@ -299,23 +339,8 @@ export default function Haceres({
             />
             <h3>Por un pétrea crónica de agua: estudio introductorio</h3>
           </div>
-          <div className={styles.comentarios}>
-            <p>
-              Por un pétrea crónica de agua: estudio introductorio, estudio
-              introductorio sobre el poemario Xibalbá: Texas de Leonel Alvarado,
-              Colección Premio Centroamericano Rogelio Sinán, Universidad
-              Tecnológica de Panamá, 2014, pp. 5-13.
-            </p>
-          </div>
         </div>
         <div className={styles.container}>
-          <div className={styles.comentarios}>
-            <p>
-              trabajo colaborativo junto a Liriola Leoteau y Eyra Harbar.
-              Participación en la creación y redacción. Responsable de la
-              edición, corrección y diseño, Panamá, 2016.
-            </p>
-          </div>
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
@@ -327,8 +352,24 @@ export default function Haceres({
             />
             <h3>Memoria Institucional 2015 del INAMU</h3>
           </div>
+          <div className={styles.comentarios}>
+            <p>
+              trabajo colaborativo junto a Liriola Leoteau y Eyra Harbar.
+              Participación en la creación y redacción. Responsable de la
+              edición, corrección y diseño, Panamá, 2016.
+            </p>
+          </div>
         </div>
         <div className={styles.container}>
+          <div className={styles.comentarios}>
+            <p>
+              Paisaje y desarraigo en la escritura jaramilloleviana, estudio
+              sobre la obra del escritor Enrique Jaramillo Levi en Habitar la
+              escritura. -De `Duplicaciones´ (1973) a ´Inmersiones` (2019)-
+              Indagaciones sobre la obra literaria de Enrique Jaramillo Levi,
+              Foro/Taller Sagitario Ediciones, Panamá, 2019, pp. 17-51.
+            </p>
+          </div>
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
@@ -340,24 +381,8 @@ export default function Haceres({
             />
             <h3>Paisaje y desarraigo en la escritura jaramilloleviana</h3>
           </div>
-          <div className={styles.comentarios}>
-            <p>
-              Paisaje y desarraigo en la escritura jaramilloleviana, estudio
-              sobre la obra del escritor Enrique Jaramillo Levi en Habitar la
-              escritura. -De `Duplicaciones´ (1973) a ´Inmersiones` (2019)-
-              Indagaciones sobre la obra literaria de Enrique Jaramillo Levi,
-              Foro/Taller Sagitario Ediciones, Panamá, 2019, pp. 17-51.
-            </p>
-          </div>
         </div>
         <div className={styles.container}>
-          <div className={styles.comentarios}>
-            <p>
-              Para una noche que comienza, prólogo, edición y corrección del
-              libro de cuentos La noche de los cocuyos de Danae Brugiati, Taller
-              cultura publicaciones, Panamá, 2019, pp. 11-17.
-            </p>
-          </div>
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
@@ -369,8 +394,23 @@ export default function Haceres({
             />
             <h3>Para una noche que comienza</h3>
           </div>
+          <div className={styles.comentarios}>
+            <p>
+              Para una noche que comienza, prólogo, edición y corrección del
+              libro de cuentos La noche de los cocuyos de Danae Brugiati, Taller
+              cultura publicaciones, Panamá, 2019, pp. 11-17.
+            </p>
+          </div>
         </div>
         <div className={styles.container}>
+          <div className={styles.comentarios}>
+            <p>
+              Canto de cenizas sobre el agua, artículo-reseña del poemario
+              `Managua 38o´ de Marta Leonor González (Nicaragua) en Realidad:
+              Revista de Ciencias Sociales y Humanidades (156): 2021, pp.
+              247-253.
+            </p>
+          </div>
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
@@ -382,17 +422,9 @@ export default function Haceres({
             />
             <h3>Canto de cenizas sobre el agua</h3>
           </div>
-          <div className={styles.comentarios}>
-            <p>
-              Canto de cenizas sobre el agua, artículo-reseña del poemario
-              `Managua 38o´ de Marta Leonor González (Nicaragua) en Realidad:
-              Revista de Ciencias Sociales y Humanidades (156): 2021, pp.
-              247-253.
-            </p>
-          </div>
         </div>
       </section>
-      */}
+
       <ScrollUp
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}

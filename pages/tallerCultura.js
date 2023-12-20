@@ -30,7 +30,7 @@ export default function TallerCultura({
           />
         </div>
         <div className={styles.text}>
-          <h1>Taller Cultura</h1>
+          <h1>TALLER CULTURA</h1>
           <p>
             <strong><i>Taller Cultura es una asociación fundada en 2013</i></strong> para la promoción
             de la cultura, las ciencias sociales y humanísticas, con un interés
@@ -48,7 +48,7 @@ export default function TallerCultura({
             Entre nuestras principales actividades se cuenta la promoción de la
             lectura y la literatura. Queremos que la literatura sea hermana del
             quehacer diario, ya como lectores o como escritores, y para tal
-            propósito <strong><i>venimos realizando desde 2014 charlas, conversatorios y
+            propósito <strong><i>desde 2014 venimos realizando charlas, conversatorios y
             recitales</i></strong> que incentiven al público, en especial a los jóvenes, a
             acercarse a autores panameños e internacionales.
           </p>

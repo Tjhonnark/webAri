@@ -30,7 +30,6 @@ export default function Trayectoria({
           <h2>En construcción</h2>
         </div>
       </section>
-      {/* 
       <section className={styles.trayectoria}>
         <h2>Trayectoria</h2>
         <div className={styles.row1}>
@@ -182,7 +181,6 @@ export default function Trayectoria({
           </div>
         </div>
       </section>
-*/}
       <ScrollUp
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}
