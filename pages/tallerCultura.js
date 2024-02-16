@@ -19,6 +19,7 @@ export default function TallerCultura({
     <div className={styles.body}>
       <Navbar />
       <section id="section1" className={styles.sectionMain}>
+        <div className={styles.column1}>
         <div className={styles.photo}>
           <Image
             className={styles.imageS1}
@@ -30,7 +31,6 @@ export default function TallerCultura({
           />
         </div>
         <div className={styles.text}>
-          <h1>TALLER CULTURA</h1>
           <p>
             <strong><i>Taller Cultura es una asociación fundada en 2013</i></strong> para la promoción
             de la cultura, las ciencias sociales y humanísticas, con un interés
@@ -45,18 +45,21 @@ export default function TallerCultura({
             experticias.
             <br />
             <br />
-            Entre nuestras principales actividades se cuenta la promoción de la
+            
+          </p>
+        </div>
+        </div>
+        <div className={styles.column2}>
+        <div className={styles.text2}>
+          <p>
+          Entre nuestras principales actividades se cuenta la promoción de la
             lectura y la literatura. Queremos que la literatura sea hermana del
             quehacer diario, ya como lectores o como escritores, y para tal
             propósito <strong><i>desde 2014 venimos realizando charlas, conversatorios y
             recitales</i></strong> que incentiven al público, en especial a los jóvenes, a
             acercarse a autores panameños e internacionales.
-          </p>
-        </div>
-      </section>
-      <section id="section2" className={styles.section2}>
-        <div className={styles.text2}>
-          <p>
+            <br />
+              <br />
             Como creadores de contenido <strong><i>a partir de 2019 establecimos la
             división Taller Cultura Publicaciones</i></strong>, ofreciendo servicios y sello
             editorial no lucrativo para el acompañamiento de escritores.
@@ -78,10 +81,14 @@ export default function TallerCultura({
             <br />
             Nuestra próxima aventura: ¡nuestra página web, pronto....! De
             momento, nos pueden contactar a través de nuestras redes sociales y
-            correo: @fundaciontallercultura |
-            fundaciontallercultura@gmail.com
+            correo: @fundaciontallercultura
           </p>
         </div>
+        </div>
+        
+      </section>
+      <section id="section2" className={styles.section2}>
+        
         <div className={styles.carrusel2}>
           <Carrusel2 />
         </div>

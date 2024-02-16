@@ -107,11 +107,11 @@ export default function Haceres({
               modalForm={comentario2}
               setModalForm={setComentario2}
               comentario="“Título sugestivo y kinestésico, encerrado en paréntesis. Territorio de asombro que desvela lo inusual. Poeta de fino palpar, y me refiero a esa epidermis del lenguaje suave, melodioso a veces, sin embargo, el poema no se da de manera fácil, ningún auténtico poema lo es. Aguza los sentidos para tomar el escarpelo e insertarlo en la interioridad del poema. Usa versos de arte menor y poemas breves. No hay desmesura, más bien, concentración. Esto me agrada ante el palabrerío insustancial de muchos poetas.”"
-              people="Víctor Bidó Ensayista"
-              more="Poeta y pintor (Rep. Dominicana)."
+              people="Víctor Bidó"
+              more="Ensayista (Rep. Dominicana)."
             />
             <button className={styles.comentario2} onClick={cart2}>
-              Víctor Bidó Ensayista
+              Víctor Bidó
             </button>
             <Comentarios
               modalForm={comentario3}
@@ -151,14 +151,14 @@ export default function Haceres({
           <div className={styles.libro1}>
             <Image
               className={styles.libro1img}
-              src="/foto2.jpg"
+              src="/foto2b.jpg"
               alt="Ariadna Garcia"
               width={300}
               height={370}
               priority
             />
             <h3>
-              Opus sostenido. Alegoría musical para Abrazos de una nariz sin
+              2014 - Opus sostenido. Alegoría musical<br /> para Abrazos de una nariz sin
               olfato
             </h3>
           </div>
@@ -173,7 +173,7 @@ export default function Haceres({
               height={370}
               priority
             />
-            <h3>Patrimonio intangible (poesía, 2018)</h3>
+            <h3>2018 - Patrimonio intangible</h3>
           </div>
           <div className={styles.comentarios}>
             <Comentarios
@@ -242,8 +242,8 @@ export default function Haceres({
               priority
             />
             <h3>
-              La nueva canción de Afrodita. Estudio y antología de poesía
-              posmoderna de mujeres en Panamá
+              2022 - La nueva canción de Afrodita.<br />Estudio y antología de poesía
+              femenina<br />posmoderna en Panamá
             </h3>
           </div>
           <div className={styles.comentarios}>
@@ -291,7 +291,7 @@ export default function Haceres({
               height={370}
               priority
             />
-            <h3>Vasco Núñez de Balboa y la geopsiquis de una nación</h3>
+            <h3>1999, 2001 y 2013 - Vasco Núñez de Balboa<br /> y la geopsiquis de una nación</h3>
           </div>
         </div>
         <div className={styles.container}>
@@ -305,8 +305,8 @@ export default function Haceres({
               priority
             />
             <h3>
-              La página en blanco de lo tropical: la literatura latinoamericana
-              en Francia y Estados Unidos
+              2003 - La página en blanco de lo tropical: <br />la literatura latinoamericana
+              <br />en Francia y Estados Unidos
             </h3>
           </div>
           <div className={styles.comentarios}>
@@ -337,7 +337,7 @@ export default function Haceres({
               height={370}
               priority
             />
-            <h3>Por un pétrea crónica de agua: estudio introductorio</h3>
+            <h3>2014 - Por un pétrea crónica de agua: <br />estudio introductorio</h3>
           </div>
         </div>
         <div className={styles.container}>
@@ -350,11 +350,11 @@ export default function Haceres({
               height={370}
               priority
             />
-            <h3>Memoria Institucional 2015 del INAMU</h3>
+            <h3>2016 - Memoria Institucional</h3>
           </div>
           <div className={styles.comentarios}>
             <p>
-              trabajo colaborativo junto a Liriola Leoteau y Eyra Harbar.
+              Trabajo colaborativo junto a Liriola Leoteau y Eyra Harbar.
               Participación en la creación y redacción. Responsable de la
               edición, corrección y diseño, Panamá, 2016.
             </p>
@@ -379,7 +379,7 @@ export default function Haceres({
               height={370}
               priority
             />
-            <h3>Paisaje y desarraigo en la escritura jaramilloleviana</h3>
+            <h3>2004 y 2019 - Paisaje y desarraigo en la <br />escritura jaramilloleviana</h3>
           </div>
         </div>
         <div className={styles.container}>
@@ -392,7 +392,7 @@ export default function Haceres({
               height={370}
               priority
             />
-            <h3>Para una noche que comienza</h3>
+            <h3>2019 - Para una noche que comienza <br />La noche de los cocuyos</h3>
           </div>
           <div className={styles.comentarios}>
             <p>
@@ -406,7 +406,7 @@ export default function Haceres({
           <div className={styles.comentarios}>
             <p>
               Canto de cenizas sobre el agua, artículo-reseña del poemario
-              `Managua 38o´ de Marta Leonor González (Nicaragua) en Realidad:
+              `Managua 38º´ de Marta Leonor González (Nicaragua) en Realidad:
               Revista de Ciencias Sociales y Humanidades (156): 2021, pp.
               247-253.
             </p>
