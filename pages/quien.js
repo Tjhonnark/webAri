@@ -56,7 +56,7 @@ export default function Quien({
         </div>
       </section>
       <section id="section2" className={styles.section2}>
-        <h3>Línea de tiempo</h3>
+        {/*<h3>Línea de tiempo</h3>
         <div className={styles.timelapse}>
           <div className={styles.date}>
             <p>
@@ -108,7 +108,7 @@ export default function Quien({
               .
             </Link>
           </div>
-        </div>
+                      </div>*/}
         <div className={styles.title}>
           <h3>Nota biográfica</h3>
           <h2>

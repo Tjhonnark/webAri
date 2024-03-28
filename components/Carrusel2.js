@@ -38,7 +38,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup1.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -47,7 +47,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup2.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -56,7 +56,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup3.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -65,7 +65,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup4.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -74,7 +74,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup5.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -83,7 +83,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup6.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -92,7 +92,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup7.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -101,7 +101,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup8.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -110,7 +110,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup9.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>
@@ -119,7 +119,7 @@ export default function App() {
             className={styles.img}
             src="/NeaGroup10.jpg"
             alt=""
-            width={500}
+            width={700}
             height={500}
           />
         </SwiperSlide>

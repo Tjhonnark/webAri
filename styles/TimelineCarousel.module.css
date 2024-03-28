@@ -1,0 +1,32 @@
+.timelineButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .timelineButton {
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .timelineButton.active {
+    background-color: #ccc;
+  }
+  
+
+  /* TimelineCarousel.css */
+.timelineCarousel {
+    max-width: 1200px; /* Establece un ancho máximo para el carrusel */
+    margin: 0 auto; /* Centra el carrusel en la página */
+  }
+  
+  .timelineCarousel img {
+    max-width: 350px; /* Ajusta el ancho máximo de las imágenes al tamaño máximo del contenedor */
+    height: 500px; /* Permite que la altura se ajuste proporcionalmente al ancho */
+    margin: 0 50px; /* Agrega un margen horizontal entre las imágenes */  
+}
+  

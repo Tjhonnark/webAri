@@ -167,6 +167,17 @@
   display: none;
 }
 
+.publi {
+  
+}
+
+.extras {
+  width: 100%;
+  background-color: red;
+}
+
+
+
 @media only screen and (max-width: 450px) {
   .section2 {
     width: 100%;
