@@ -117,9 +117,7 @@
   gap: 2rem;
 }
 
-.container h1 {
-  font-size: 4rem;
-}
+/*
 .p1 {
   font-size: 1.5rem;
   display: block;
@@ -143,9 +141,39 @@
 
   animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+}*/
+
+.textContainer {
+  color: rgb(255, 255, 255);
+  width: 50rem;
+  margin-top: 0rem;
+  text-align: center;
 }
 
+.typingText {
+  font-size: 1.5rem;
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
+.cursor {
+  display: inline-block;
+  width: 0.15em; /* Grosor del cursor */
+  height: 1.2em; /* Altura del cursor */
+  background-color: white;
+  animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* SECTION MINI 1 */
 .sectionMini1:before {

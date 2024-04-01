@@ -14,10 +14,43 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
   const size = UseWindowSize();
   /* console.log(size.width) */
 
+  const phrases = [
+    "A la esperanza, aniquiladora de todo pesimismo",
+    '"Panamá es verde" y verde debe ser su futuro'
+  ];
+
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [currentPhrase, setCurrentPhrase] = useState('');
+  const [currentCharacterIndex, setCurrentCharacterIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentCharacterIndex(prevIndex => prevIndex + 1);
+    }, 100); // Velocidad de escritura (100ms por caracter)
+
+    // Detener el intervalo cuando la frase está completamente escrita
+    if (currentCharacterIndex === phrases[currentPhraseIndex].length) {
+      clearInterval(intervalId);
+
+      // Cambiar a la siguiente frase después de un tiempo
+      setTimeout(() => {
+        setCurrentCharacterIndex(0);
+        setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+      }, 2000); // Esperar antes de cambiar a la siguiente frase
+    }
+
+    return () => clearInterval(intervalId);
+  }, [currentCharacterIndex, currentPhraseIndex]); // Ejecutar efecto cuando cambie currentCharacterIndex o currentPhraseIndex
+
+  useEffect(() => {
+    setCurrentPhrase(phrases[currentPhraseIndex].substring(0, currentCharacterIndex));
+  }, [currentCharacterIndex, currentPhraseIndex]); // Actualizar currentPhrase cuando cambie currentCharacterIndex o currentPhraseIndex
+
+
   return (
     <div className={styles.body}>
       <Navbar />
-      <section id="section1" className={styles.section1}>
+      <section id="section1" class={styles.section1}>
         <Image
           className={styles.imageS1}
           src="/typeWriter2.png"
@@ -27,12 +60,12 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
         />
         <div className={styles.text1_a1_s1}>
           <div className={styles.container}>
-            <p className={styles.p1}>
-              A la esperanza, aniquiladora de todo pesimismo
-            </p>
-            <p className={styles.p2}>
-              &quot;Panamá es verde&quot; y verde debe ser su futuro
-            </p>
+            <div className={styles.textContainer}>
+              <p className={styles.typingText}>
+                {currentPhrase}
+                <span className={styles.cursor}></span>
+              </p>
+            </div>
             <div className={styles.buttons}>
               <div className={styles.button1}>
                 <Link href="#section2">Abrazos de una nariz sin olfato</Link>
