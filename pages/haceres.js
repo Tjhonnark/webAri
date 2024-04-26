@@ -127,7 +127,7 @@ export default function Haceres({
                 more="Ensayista y sociólogo"
               />
               <button className={styles.comentario2} onClick={cart62}>
-                Olmedo Beluche"
+                Olmedo Beluche
               </button>
               <Comentarios
                 modalForm={comentario63}
