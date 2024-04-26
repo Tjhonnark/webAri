@@ -142,6 +142,18 @@ export default function Haceres({
             </div>
           </div>
           <div className={styles.container}>
+            <div className={styles.comentarios}>
+              <Comentarios
+                modalForm={comentario41}
+                setModalForm={setComentario41}
+                comentario="“Es un yo lírico tenaz, recio, fuerte, armado con la ironía. Sus poemas son también canciones con letra y música para que tengan todos los lenguajes del Horus. Visual, auditivo, kinésico para aumentar su poder de movilización emocional.”"
+                people="Rafael Ruiloba"
+                more="Catedrático y escritor (Panamá)."
+              />
+              <button className={styles.comentario} onClick={cart41}>
+                Rafael Ruiloba
+              </button>
+            </div>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -158,18 +170,6 @@ export default function Haceres({
                 <br />
                 posmoderna en Panamá
               </h3>
-            </div>
-            <div className={styles.comentarios}>
-              <Comentarios
-                modalForm={comentario41}
-                setModalForm={setComentario41}
-                comentario="“Es un yo lírico tenaz, recio, fuerte, armado con la ironía. Sus poemas son también canciones con letra y música para que tengan todos los lenguajes del Horus. Visual, auditivo, kinésico para aumentar su poder de movilización emocional.”"
-                people="Rafael Ruiloba"
-                more="Catedrático y escritor (Panamá)."
-              />
-              <button className={styles.comentario} onClick={cart41}>
-                Rafael Ruiloba
-              </button>
             </div>
           </div>
 
