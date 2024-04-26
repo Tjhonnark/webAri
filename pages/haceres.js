@@ -225,7 +225,7 @@ export default function Haceres({
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
-                src="/foto2b.jpg"
+                src="/Foto2b.jpg"
                 alt="Ariadna Garcia"
                 width={300}
                 height={370}
