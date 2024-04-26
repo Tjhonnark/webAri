@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Slider from 'react-slick';
 import classNames from 'classnames';
 import 'slick-carousel/slick/slick.css';
@@ -7,7 +7,18 @@ import styles from '../styles/TimelineCarousel.module.css'; // Estilos CSS perso
 
 const TimelineCarousel = ({ images }) => {
   const sliderRef = useRef(null);
-  const [currentYear, setCurrentYear] = useState(0);
+  const [yearIndices, setYearIndices] = useState({}); // Estado para almacenar el índice de la primera imagen de cada año
+
+  useEffect(() => {
+    // Agrupar imágenes por año y obtener el índice de la primera imagen de cada año
+    const indices = {};
+    images.forEach((image, index) => {
+      if (!indices[image.year]) {
+        indices[image.year] = index;
+      }
+    });
+    setYearIndices(indices);
+  }, [images]);
 
   const settings = {
     dots: false,
@@ -15,28 +26,31 @@ const TimelineCarousel = ({ images }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true, // Activa el modo centrado
-    centerPadding: '0px', // Espaciado entre las imágenes
+    centerMode: true,
+    centerPadding: '0px',
   };
 
-  const goToYear = (yearIndex) => {
+  // Función para cambiar el año y desplazarse al primer slide de ese año
+  const changeYear = (year) => {
+    const yearIndex = yearIndices[year];
     sliderRef.current.slickGoTo(yearIndex);
-    setCurrentYear(yearIndex);
   };
 
   return (
-    <div className={styles.timelineCarousel}> {/* Agrega la clase timeline-carousel */}
+    <div className={styles.timelineCarousel}>
+      {/* Botones para cambiar el año */}
       <div className={styles.timelineButtons}>
-        {images.map((image, index) => (
+        {Object.keys(yearIndices).map((year) => (
           <button
-            key={index}
-            className={classNames(styles.timelineButton, { active: currentYear === index })}
-            onClick={() => goToYear(index)}
+            key={year}
+            className={styles.timelineButton}
+            onClick={() => changeYear(year)}
           >
-            {image.year}
+            {year}
           </button>
         ))}
       </div>
+      {/* Carrusel de imágenes */}
       <Slider {...settings} ref={sliderRef}>
         {images.map((image, index) => (
           <div key={index}>

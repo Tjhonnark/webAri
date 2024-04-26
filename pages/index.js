@@ -16,16 +16,16 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
 
   const phrases = [
     "A la esperanza, aniquiladora de todo pesimismo",
-    '"Panamá es verde" y verde debe ser su futuro'
+    '"Panamá es verde" y verde debe ser su futuro',
   ];
 
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  const [currentPhrase, setCurrentPhrase] = useState('');
+  const [currentPhrase, setCurrentPhrase] = useState("");
   const [currentCharacterIndex, setCurrentCharacterIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentCharacterIndex(prevIndex => prevIndex + 1);
+      setCurrentCharacterIndex((prevIndex) => prevIndex + 1);
     }, 100); // Velocidad de escritura (100ms por caracter)
 
     // Detener el intervalo cuando la frase está completamente escrita
@@ -43,9 +43,10 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
   }, [currentCharacterIndex, currentPhraseIndex]); // Ejecutar efecto cuando cambie currentCharacterIndex o currentPhraseIndex
 
   useEffect(() => {
-    setCurrentPhrase(phrases[currentPhraseIndex].substring(0, currentCharacterIndex));
+    setCurrentPhrase(
+      phrases[currentPhraseIndex].substring(0, currentCharacterIndex)
+    );
   }, [currentCharacterIndex, currentPhraseIndex]); // Actualizar currentPhrase cuando cambie currentCharacterIndex o currentPhraseIndex
-
 
   return (
     <div className={styles.body}>

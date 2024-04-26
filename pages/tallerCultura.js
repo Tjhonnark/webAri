@@ -19,9 +19,18 @@ export default function TallerCultura({
   const images = [
     { url: '/Foto1b.jpg', year: 2013 },
     { url: '/Foto6b.jpg', year: 2014 },
-    { url: '/Foto1b.jpg', year: 2019 },
+    { url: '/Foto2b.jpg', year: 2019 },
+    { url: '/Foto5.jpg', year: 2019 },
     { url: '/NeaGroup1.jpg', year: 2022 },
-    { url: '/NeaGroup1.jpg'},
+    { url: '/NeaGroup2.jpg', year: 2022 },
+    { url: '/NeaGroup3.jpg', year: 2022 },
+    { url: '/NeaGroup4.jpg', year: 2022 },
+    { url: '/NeaGroup5.jpg', year: 2022 },
+    { url: '/NeaGroup6.jpg', year: 2022 },
+    { url: '/NeaGroup7.jpg', year: 2022 },
+    { url: '/NeaGroup8.jpg', year: 2022 },
+    { url: '/NeaGroup9.jpg', year: 2022 },
+    { url: '/NeaGroup10.jpg', year: 2022 },
     // Agrega más imágenes con años correspondientes según sea necesario
   ];
 
@@ -111,7 +120,7 @@ export default function TallerCultura({
           </div>
         </div>
       </section>
-      <section className={styles.section2}>
+      <section id="section2" className={styles.section2}>
         <h3>Línea de tiempo</h3>
         <TimelineCarousel images={images} />
       </section>
