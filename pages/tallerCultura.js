@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import ScrollUp from "../components/ScrollUp";
 import Burger from "../components/Burger";
 import TimelineCarousel from "../components/TimelineCarousel";
-import Carrusel2 from "../components/Carrusel2";
 /* DATA */
 /* STYLES */
 import styles from "../styles/TallerCultura.module.css";
@@ -17,21 +16,37 @@ export default function TallerCultura({
   styleBurger,
 }) {
   const images = [
-    { url: '/Foto1b.jpg', year: 2013 },
-    { url: '/Foto6b.jpg', year: 2014 },
-    { url: '/Foto2b.jpg', year: 2019 },
-    { url: '/Foto5.jpg', year: 2019 },
-    { url: '/NeaGroup1.jpg', year: 2022 },
-    { url: '/NeaGroup2.jpg', year: 2022 },
-    { url: '/NeaGroup3.jpg', year: 2022 },
-    { url: '/NeaGroup4.jpg', year: 2022 },
-    { url: '/NeaGroup5.jpg', year: 2022 },
-    { url: '/NeaGroup6.jpg', year: 2022 },
-    { url: '/NeaGroup7.jpg', year: 2022 },
-    { url: '/NeaGroup8.jpg', year: 2022 },
-    { url: '/NeaGroup9.jpg', year: 2022 },
-    { url: '/NeaGroup10.jpg', year: 2022 },
-    // Agrega más imágenes con años correspondientes según sea necesario
+    { url: '/timelapse/2013a.jpg', year: 2013 },
+    { url: '/timelapse/2013b.jpg', year: 2013 },
+    { url: '/timelapse/2013c.jpg', year: 2013 },
+    { url: '/timelapse/2013d.jpg', year: 2013 },
+    { url: '/timelapse/2014.jpg', year: 2014 },
+    { url: '/timelapse/2016.jpg', year: 2016 },
+    { url: '/timelapse/2017a.jpg', year: 2017 },
+    { url: '/timelapse/2017b.jpg', year: 2017 },
+    { url: '/timelapse/2017c.jpg', year: 2017 },
+    { url: '/timelapse/2017d.jpg', year: 2017 },
+    { url: '/timelapse/2017e.jpg', year: 2017 },
+    { url: '/timelapse/2018.jpg', year: 2018 },
+    { url: '/timelapse/2019a.jpg', year: 2019 },
+    { url: '/timelapse/2019b.jpg', year: 2019 },
+    { url: '/timelapse/2020a.jpg', year: 2020 },
+    { url: '/timelapse/2020b.JPG', year: 2020 },
+    { url: '/timelapse/2021.jpg', year: 2021 },
+    { url: '/timelapse/NeaGroup1.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup2.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup3.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup4.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup5.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup6.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup7.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup8.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup9.jpg', year: 2022 },
+    { url: '/timelapse/NeaGroup10.jpg', year: 2022 },
+    { url: '/timelapse/2023a.jpg', year: 2023 },
+    { url: '/timelapse/2023b.jpg', year: 2023 },
+    { url: '/timelapse/2023c.jpg', year: 2023 },
+    { url: '/timelapse/2023d.jpg', year: 2023 },
   ];
 
   return (
@@ -124,11 +139,6 @@ export default function TallerCultura({
         <h3>Línea de tiempo</h3>
         <TimelineCarousel images={images} />
       </section>
-      {/*<section id="section3" className={styles.section3}>
-        <div className={styles.carrusel2}>
-          <Carrusel2 />
-        </div>
-  </section>*/}
       <ScrollUp
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}

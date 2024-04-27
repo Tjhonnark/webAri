@@ -34,22 +34,22 @@ export default function App() {
         className={styles.swiper}
       >
         <SwiperSlide className={styles.SwiperSlide}>
-          <Image className={styles.img} src="/Foto1b.jpg" alt="" width={500} height={500} />
+          <Image className={styles.img} src="/carrusel/Foto1b.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <Image className={styles.img} src="/Foto2b.jpg"alt="" width={500} height={500} />
+          <Image className={styles.img} src="/carrusel/Foto2b.jpg"alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <Image className={styles.img} src="/Foto3b.jpg" alt="" width={500} height={500} />
+          <Image className={styles.img} src="/carrusel/Foto3b.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <Image className={styles.img} src="/Foto4.jpg" alt="" width={500} height={500} />
+          <Image className={styles.img} src="/carrusel/Foto4.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <Image className={styles.img} src="/Foto5b.jpg" alt="" width={500} height={500} />
+          <Image className={styles.img} src="/carrusel/Foto5b.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
-          <Image className={styles.img} src="/Foto6b.jpg" alt="" width={500} height={500} />
+          <Image className={styles.img} src="/carrusel/Foto6b.jpg" alt="" width={500} height={500} />
         </SwiperSlide>
       </Swiper>
     </>
