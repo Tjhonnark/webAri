@@ -91,7 +91,6 @@ export default function Haceres({
       </section>
 
       <section className={styles.publicaciones}>
-        <h2>Publicaciones</h2>
         <div className={styles.publi}>
           <div className={styles.container}>
             <div className={styles.libro1}>
@@ -225,7 +224,7 @@ export default function Haceres({
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
-                src="/Foto2b.jpg"
+                src="/carrusel/Foto2b.jpg"
                 alt="Ariadna Garcia"
                 width={300}
                 height={370}
