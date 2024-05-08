@@ -1,46 +1,63 @@
-import Link from 'next/link'
-import Image from 'next/image'
-/* STYLES */
-import styles from '../styles/Burger.module.css'
+import { useState } from "react";
+import Link from "next/link";
+// STYLES
+import styles from "../styles/Burger.module.css";
 
-export default function Burger({ styleBurger }) {
-    return (
-        <div>
-            <div className={styles.menu}>
-                <input id="menu__toggle" className={styles.menu__toggle} type="checkbox" />
-                <label className={styleBurger ? styles.menu__btn : styles.menu__btn2} htmlFor="menu__toggle">
-                    <span></span>
-                </label>
+export default function Burger({ menuOpen, setMenuOpen }) {
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-                <ul className={styleBurger ? styles.menu__box2 : styles.menu__box}>
-                    <Image
-                        src="/logo.png"
-                        className={styles.logo}
-                        alt=""
-                        width={100}
-                        height={100} />
-                    <li>
-                        <Link className={styles.menu__item} href="/">
-                            <i className="bi bi-house-fill"></i>
-                            Inicio
-                        </Link></li>
-                    <li>
-                        <Link className={styles.menu__item} href="/about">
-                            <i className="bi bi-people-fill"></i>
-                            ¿Quiénes somos?
-                        </Link></li>
-                    <li>
-                        <Link className={styles.menu__item} href="/products">
-                            <i className="bi bi-box-seam"></i>
-                            Productos
-                        </Link></li>
-                    <li>
-                        <Link className={styles.menu__item} href="/contact">
-                            <i className="bi bi-envelope-paper-fill"></i>
-                            Contactos
-                        </Link></li>
-                </ul>
-            </div>
-        </div>
-    )
+  const handleMenuItemClick = () => {
+    setMenuOpen(false); // Cerrar el menú al hacer clic en un elemento del menú
+  };
+
+  return (
+    <nav className={styles.nav}>
+      <button className={styles.burgerButton} onClick={handleToggleMenu}>
+        <div className={styles.burger}></div>
+        <div className={styles.burger}></div>
+        <div className={styles.burger}></div>
+      </button>
+      <div className={styles.logo}></div>
+      <ul className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
+        <li className={styles.menuItem} onClick={handleMenuItemClick}>
+          <Link href="/">
+            <i className="bi bi-house-fill"></i>
+            Inicio
+          </Link>
+        </li>
+        <li className={styles.menuItem} onClick={handleMenuItemClick}>
+          <Link href="/quien">
+            <i className="bi bi-people-fill"></i>¿Quién?
+          </Link>
+        </li>
+        <li className={styles.menuItem} onClick={handleMenuItemClick}>
+          <Link href="/haceres">
+            <i class="bi bi-pencil-fill"></i>
+            Haceres
+          </Link>
+        </li>
+        <li className={styles.menuItem} onClick={handleMenuItemClick}>
+          <Link href="/andares">
+            <i class="bi bi-images"></i>
+            Andares
+          </Link>
+        </li>
+        <li className={styles.menuItem} onClick={handleMenuItemClick}>
+          <Link href="/tallerCultura">
+            <i className="bi bi-envelope-paper-fill"></i>
+            Taller Cultura
+          </Link>
+        </li>
+        <li className={styles.menuItem} onClick={handleMenuItemClick}>
+          <Link href="/contacto">
+            <i className="bi bi-envelope-paper-fill"></i>
+            Contacto
+          </Link>
+        </li>
+        {/* Resto de tus items del menú */}
+      </ul>
+    </nav>
+  );
 }

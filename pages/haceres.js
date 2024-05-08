@@ -13,7 +13,8 @@ import styles from "../styles/Haceres.module.css";
 export default function Haceres({
   scrollUpFunction,
   styleScrollUp,
-  styleBurger,
+  menuOpen,
+  setMenuOpen,
 }) {
   const [comentario, setComentario] = useState(false);
   const [comentario2, setComentario2] = useState(false);
@@ -77,6 +78,7 @@ export default function Haceres({
   return (
     <div className={styles.body}>
       <Navbar />
+      <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <section id="section1" className={styles.section1}>
         <div className={styles.videoBackground}>
           <video autoPlay muted loop>
@@ -475,8 +477,7 @@ export default function Haceres({
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}
       />
-      <Burger styleBurger={styleBurger} />
-      <Footer
+     <Footer
         page="/haceres"
         section1="Section 1"
         section2="Section 2"

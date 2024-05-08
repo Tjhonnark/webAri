@@ -13,13 +13,15 @@ import styles from "../styles/Quien.module.css";
 export default function Quien({
   scrollUpFunction,
   styleScrollUp,
-  styleBurger,
+  menuOpen,
+  setMenuOpen,
 }) {
   /* console.log(Image) */
 
   return (
     <div className={styles.body}>
       <Navbar />
+      <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <section id="section1" className={styles.section1}>
         <Image
           className={styles.imageS1}
@@ -215,7 +217,6 @@ export default function Quien({
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}
       />
-      <Burger styleBurger={styleBurger} />
       <Footer page="/quien" section1="Section 1" section2="Section 2" />
     </div>
   );

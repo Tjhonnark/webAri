@@ -15,6 +15,9 @@ function MyApp({ Component, pageProps }) {
   // Burger
   const [styleBurger, setStyleBurger] = useState(true);
 
+  // Burger2
+  const [menuOpen, setMenuOpen] = useState(false);
+
   // Scroll Up
   const [styleScrollUp, setStyleScrollUp] = useState(true)
 
@@ -92,7 +95,8 @@ function MyApp({ Component, pageProps }) {
           {...pageProps}
           scrollUpFunction={scrollUpFunction}
           styleScrollUp={styleScrollUp}
-          styleBurger={styleBurger}
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
         />
       </Layout>
 

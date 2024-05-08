@@ -10,7 +10,7 @@ import UseWindowSize from "../components/UseWindowSize";
 /* STYLES */
 import styles from "../styles/Home.module.css";
 
-function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
+function Home({ scrollUpFunction, styleScrollUp, menuOpen, setMenuOpen }) {
   const size = UseWindowSize();
   /* console.log(size.width) */
 
@@ -51,6 +51,7 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
   return (
     <div className={styles.body}>
       <Navbar />
+      <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <section id="section1" class={styles.section1}>
         <Image
           className={styles.imageS1}
@@ -169,23 +170,11 @@ function Home({ scrollUpFunction, styleScrollUp, styleBurger }) {
           <p>Festival Internacional de Poesía de Penonomé en Abril, 2014</p>
         </div>
       </section>
-      <section id="section3" className={styles.sectionMini3}>
-        <Image
-          className={styles.imageS3}
-          src="/DSC_0115.JPG"
-          alt=""
-          width={450}
-          height={550}
-        />
-        <div className={styles.text1_a1_s3}>
-          <p>Festival Internacional de Poesía de Penonomé en Abril, 2014</p>
-        </div>
-      </section>
+     
       <ScrollUp
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}
       />
-      <Burger styleBurger={styleBurger} />
       <Footer
         page="/"
         section1="Section 1"

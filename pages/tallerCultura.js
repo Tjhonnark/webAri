@@ -13,7 +13,8 @@ import styles from "../styles/TallerCultura.module.css";
 export default function TallerCultura({
   scrollUpFunction,
   styleScrollUp,
-  styleBurger,
+  menuOpen,
+  setMenuOpen,
 }) {
   const images = [
     { url: '/timelapse/2013a.jpg', year: 2013 },
@@ -53,6 +54,7 @@ export default function TallerCultura({
   return (
     <div className={styles.body}>
       <Navbar />
+      <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <section id="section1" className={styles.sectionMain}>
         <div className={styles.column1}>
           <div className={styles.photo}>
@@ -144,7 +146,6 @@ export default function TallerCultura({
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}
       />
-      <Burger styleBurger={styleBurger} />
       <Footer page="/tallerCultura" section1="Section 1" section2="Section 2"/>
     </div>
   );

@@ -13,11 +13,13 @@ import styles from "../styles/Andares.module.css";
 export default function Andares({
   scrollUpFunction,
   styleScrollUp,
-  styleBurger,
+  menuOpen,
+  setMenuOpen,
 }) {
   return (
     <div className={styles.body}>
       <Navbar />
+      <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <section id="section1" className={styles.section1}>
         <Image
           className={styles.imageS1}
@@ -185,7 +187,6 @@ export default function Andares({
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}
       />
-      <Burger styleBurger={styleBurger} />
       <Footer
         page="/andares"
         section1="Section 1"
