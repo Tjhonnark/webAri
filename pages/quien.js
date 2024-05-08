@@ -117,9 +117,7 @@ export default function Quien({
           </h2>
         </div>
         <div className={styles.description}>
-          <p
-            lang="ES"
-          >
+          <p lang="ES">
             Cuenta con experiencia internacional y experticia cultural
             desarrollada en Estados Unidos, Francia, España, Grecia y Panamá
             como profesora/formadora, investigadora, escritora y editora de

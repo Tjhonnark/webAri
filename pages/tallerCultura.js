@@ -33,6 +33,7 @@ export default function TallerCultura({
     { url: '/timelapse/2020a.jpg', year: 2020 },
     { url: '/timelapse/2020b.JPG', year: 2020 },
     { url: '/timelapse/2021.jpg', year: 2021 },
+    { url: '/timelapse/2021b.jpg', year: 2021 },
     { url: '/timelapse/NeaGroup1.jpg', year: 2022 },
     { url: '/timelapse/NeaGroup2.jpg', year: 2022 },
     { url: '/timelapse/NeaGroup3.jpg', year: 2022 },
@@ -144,7 +145,7 @@ export default function TallerCultura({
         styleScrollUp={styleScrollUp}
       />
       <Burger styleBurger={styleBurger} />
-      <Footer page="/tallerCultura" section1="Section 1" />
+      <Footer page="/tallerCultura" section1="Section 1" section2="Section 2"/>
     </div>
   );
 }

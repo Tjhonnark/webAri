@@ -25,27 +25,54 @@ export default function Footer(props) {
           </div>
           <div className={styles.itemPages}>
             <Link href="/quien">
-              <i className="bi bi-people-fill"></i>¿Quién?
+              <Image
+                className={styles.group}
+                src="/icons/Quien 11552c.png"
+                alt="Ariadna Garcia"
+                width={20}
+                height={20}
+              />
+              ¿Quién?
             </Link>
           </div>
           <div className={styles.itemPages}>
             <Link href="/haceres">
-              <i class="bi bi-pencil-fill"></i>Haceres
+              <Image
+                className={styles.group}
+                src="/icons/Haceres 9351713b.png"
+                alt="Ariadna Garcia"
+                width={20}
+                height={20}
+              />
+              Haceres
             </Link>
           </div>
           <div className={styles.itemPages}>
-            <Link href="/tallercultura">
-            <Image
+            <Link href="/andares">
+              <Image
+                className={styles.group}
+                src="/icons/Andares 11552b.png"
+                alt="Ariadna Garcia"
+                width={20}
+                height={20}
+              />
+              Andares
+            </Link>
+          </div>
+          <div className={styles.itemPages}>
+            <Link href="/tallerCultura">
+              <Image
                 className={styles.group}
                 src="/icon.png"
                 alt="Ariadna Garcia"
                 width={20}
                 height={20}
-              />Taller cultura
+              />
+              Taller cultura
             </Link>
           </div>
           <div className={styles.itemPages}>
-            <Link href="/contact">
+            <Link href="/contacto">
               <i className="bi bi-envelope-paper-fill"></i>Blog / Contacto
             </Link>
           </div>

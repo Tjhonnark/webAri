@@ -8,9 +8,9 @@ import ScrollUp from "../components/ScrollUp";
 import Burger from "../components/Burger";
 import Carrusel from "../components/Carrusel";
 /* STYLES */
-import styles from "../styles/Trayectoria.module.css";
+import styles from "../styles/Andares.module.css";
 
-export default function Trayectoria({
+export default function Andares({
   scrollUpFunction,
   styleScrollUp,
   styleBurger,
@@ -187,7 +187,7 @@ export default function Trayectoria({
       />
       <Burger styleBurger={styleBurger} />
       <Footer
-        page="/haceres"
+        page="/andares"
         section1="Section 1"
         section2="Section 2"
         section3="Section 3"

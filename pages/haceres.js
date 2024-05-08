@@ -78,15 +78,12 @@ export default function Haceres({
     <div className={styles.body}>
       <Navbar />
       <section id="section1" className={styles.section1}>
-        <Image
-          className={styles.imageS1}
-          src="/books.jpg"
-          alt=""
-          width={1400}
-          height={550}
-        />
-        <div className={styles.text1_a1_s1}>
-          <h2>En construcción</h2>
+        <div className={styles.videoBackground}>
+          <video autoPlay muted loop>
+            <source src="/video.mp4" type="video/mp4" />
+            {/* Add additional source elements for other formats if necessary */}
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
