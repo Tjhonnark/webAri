@@ -58,59 +58,6 @@ export default function Quien({
         </div>
       </section>
       <section id="section2" className={styles.section2}>
-        {/*<h3>Línea de tiempo</h3>
-        <div className={styles.timelapse}>
-          <div className={styles.date}>
-            <p>
-              2023&emsp;&emsp;&emsp;&emsp;
-              2023&emsp;&emsp;&emsp;
-              2023&emsp;&emsp;&emsp;&emsp;
-              2023&emsp;&emsp;&emsp;&emsp;
-              2023&emsp;&emsp;&emsp;&emsp;
-              2023&emsp;&emsp;&emsp;&emsp;
-              2023&emsp;&emsp;&emsp;&emsp;
-              2023&emsp;&emsp;&emsp;&emsp;
-              2023&emsp;&emsp;&emsp;
-            </p>
-          </div>
-          <div className={styles.buttons}>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-            <div className={styles.line}></div>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-            <div className={styles.line}></div>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-            <div className={styles.line}></div>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-            <div className={styles.line}></div>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-            <div className={styles.line}></div>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-            <div className={styles.line}></div>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-            <div className={styles.line}></div>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-            <div className={styles.line}></div>
-            <Link className={styles.link} href="">
-              .
-            </Link>
-          </div>
-                      </div>*/}
         <div className={styles.title}>
           <h2>
             <strong>Ariadna García Rodríguez</strong>

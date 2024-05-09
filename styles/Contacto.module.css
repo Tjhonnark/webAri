@@ -97,15 +97,19 @@
 
 
 @media only screen and (max-width: 450px) {
+  .section1 {
+    margin: 0;
+    padding: 0;
+  }
   .imageS1 {
-    width: 90%;
+    width: 100vw;
     height: 100%;
-    margin-top: 2rem;
+    margin: 0 0 0rem 0;
   }
-  .text_s1 {
-    width: 80%;
-  }
-  .text_s1 h1 {
-    font-size: 3rem;
+  .buttontest {
+    text-decoration: none;
+    position: absolute;
+    top: 17rem;
+    right: 4.5rem;
   }
 }

@@ -29,11 +29,10 @@ export default function Andares({
           height={550}
         />
         <div className={styles.text1_a1_s1}>
-          <h2>En construcción</h2>
+          <h2>Andares</h2>
         </div>
       </section>
       <section className={styles.trayectoria}>
-        <h2>Trayectoria</h2>
         <div className={styles.row1}>
           <div id="evento1" className={styles.evento1}>
             <Image

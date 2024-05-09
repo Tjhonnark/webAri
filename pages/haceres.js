@@ -88,7 +88,6 @@ export default function Haceres({
           </video>
         </div>
       </section>
-
       <section className={styles.publicaciones}>
         <div className={styles.publi}>
           <div className={styles.container}>
